@@ -1,0 +1,797 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 231,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.topdownrpgtutorial",
+    "pixelsRounding": false,
+    "projectUuid": "045e4c19-ad8d-40c1-b9f4-e6551950e9ae",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "topDownRPGMovement",
+    "version": "1.0.0",
+    "name": "respawn",
+    "description": "A top down RPG style movement game example with mobile controls.",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/ACharDown13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharDown16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharDown4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACgarRight16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACgarRight4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharLeft16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharLeft4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ACharUp16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ACharUp4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Dock4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dock1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Tree7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Tree8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Bush4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bush1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/House5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/WaterCorner7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "WaterCorner.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Grass4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Grass1.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Grass1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/WaterEdgeRight4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "WaterEdgeRight.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/WaterEdgeUp4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "WaterEdgeUp.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Water4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Water1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/RoadEdge4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RoadEdge1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Enemy_Spawn_Location4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy_Spawn_Location.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Road4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Road1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WaterCorner8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "WaterCorner2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "https://resources.gdevelop-app.com/in-app-tutorials/templates/topDownRPGMovement/assets/thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "thumbnail.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Shaded dark joystick border4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded dark joystick border.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/dd6e3c2d11ba02bd5a052cd47908e851b656d0fb492b52006afa4843e597d0cc_Shaded dark joystick border.png",
+          "name": "Shaded dark joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Shaded dark joystick thumb4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded dark joystick thumb.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/13d8225be69d0f11b6de965cac0d840e7e63e2510a638af89ae42b052caa2460_Shaded dark joystick thumb.png",
+          "name": "Shaded dark joystick thumb.png"
+        }
+      },
+      {
+        "file": "assets/WinCollision4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WinCollision",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Roboto-Bold4.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "3bd40ac788d44626fd640ec67ef04ab0364816b5e8c831f2077bff8805cfe689_Roboto-Bold.ttf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3bd40ac788d44626fd640ec67ef04ab0364816b5e8c831f2077bff8805cfe689_Roboto-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Chevron-Arrow-Left4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chevron-Arrow-Left.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Lucid Icons Pack/Shadow/4d60f7b4465cbd647b3569d9ffaf5589b3dacdf5db475e7a175335167fb92683_Chevron-Arrow-Left.png",
+          "name": "Chevron-Arrow-Left.png"
+        }
+      },
+      {
+        "file": "assets/Chevron-Arrow-Up4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chevron-Arrow-Up.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Lucid Icons Pack/Shadow/36d8c56187710c0ea7742d44eb20825ee099bf2e0976f342bca1c04da5f1644a_Chevron-Arrow-Up.png",
+          "name": "Chevron-Arrow-Up.png"
+        }
+      },
+      {
+        "file": "assets/You Win4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\You Win.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/e1dfa0030f0ae56d2842e8e49bde37d39e0c53ea1a434cecd997fd67d64400df-player.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/right1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/41bb974a4a4bd9de177b9c602d8d1865b546c283e78c852f4055111f1a257cf4-right1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/ca387a0b116468ebc117eae52fdf57733cb0bfcfa22402cd0b75fa9b68b0bd8b-right2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/left1.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "left1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/f7c4d18ab7a2b42fc31898ff50c1f0a5d4e371f5db38b4d3bb5da432a15bd5eb-left1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/left2.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "left2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/6eb4b7e0c107c3b418f3e34b82bc8b9458dee078f9f0356e96901139cccfc4c6-left2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/Right.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Right2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Right3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Right4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Right5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Right6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Left6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Left6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/down1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "down1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/01f6df8e1622a0fa2029110d0a805d1809221e8d6b1fa418f78020785d0c5481-down1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "down2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/6c675d07494ac937ccdce8e7b8ad6941818cab672ecdb4678561a177ba0fa1b2-down2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/Down.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Down",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Down2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Down2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/up1.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "up1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/f5fb751b46dc5580b6a8d94dfd02fcc690e1991606326d61c1c8937664f0534f-up1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/up2.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "up2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/b4ef5851d7c5aee5e295539c73dc6cff38489fbc07351beaa55cbf119047e6b5-up2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/Up.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/Up2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/street.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "street.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/7753f76014727d06a920e1d4aa7b620fb6a14b695eba1b1e56e24c63c30c01a2-street.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/street.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "street.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/hubCentral4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hubCentral.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/c6a8a9de-c7c1-4f34-b9ff-2f7a9a067ea8/resources/312f24c1df4d98fefbc51511dd33929b7bae23b391ee268b4f0603d569a54089-hubCentral.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/image/hubCentral.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hubCentral",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/hubCentral2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hubCentral2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/hubCentral3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hubCentral3",
+        "smoothed": false,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Transition",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Timer": 1,
+          "Color": "255;255;255",
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Transition"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/overworld"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/endscreen"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    }
+  ],
+  "externalLayouts": []
+}
