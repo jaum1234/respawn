@@ -1,0 +1,1 @@
+Re:spawn é um RPG point-and-click com batalhas por turno, que retrata a batalha entre IAs e os últimos remanescente da humanidade pela sobrevivência. O jogo é protagonizado por Echo, um humano híbrido-ciborgue que representa a humanidade nesta batalha.
