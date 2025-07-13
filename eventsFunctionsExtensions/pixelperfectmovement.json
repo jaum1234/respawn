@@ -752,8 +752,6 @@
           "value": "",
           "type": "Behavior",
           "label": "Top-down movement behavior",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "TopDownMovementBehavior::TopDownMovementBehavior"
           ],
@@ -763,27 +761,18 @@
           "value": "1",
           "type": "Number",
           "label": "Pixel size",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "PixelSize"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "Pixel grid offset X",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "OffsetX"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "Pixel grid offset Y",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "OffsetY"
         }
       ],
@@ -1833,8 +1822,6 @@
           "value": "",
           "type": "Behavior",
           "label": "Platformer character behavior",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "PlatformBehavior::PlatformerObjectBehavior"
           ],
@@ -1844,36 +1831,24 @@
           "value": "1",
           "type": "Number",
           "label": "Pixel size",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "PixelSize"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "Pixel grid offset X",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "OffsetX"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "Pixel grid offset Y",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "OffsetY"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TargetX"
         },
@@ -1881,9 +1856,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TargetDirectionX"
         },
@@ -1891,9 +1863,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TargetY"
         },
@@ -1901,9 +1870,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TargetDirectionY"
         },
@@ -1911,9 +1877,6 @@
           "value": "",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousSpeedX"
         },
@@ -1921,9 +1884,6 @@
           "value": "",
           "type": "Boolean",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "IsDecelerating"
         }

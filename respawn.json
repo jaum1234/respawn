@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 231,
+    "build": 233,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -710,6 +710,70 @@
         "name": "hubCentral3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "proto2_by_themfreak-d87wpdl-1465858787.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "proto2_by_themfreak-d87wpdl-1465858787.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "personaje-robot-pixel-art_642384-2-3158313860.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "personaje-robot-pixel-art_642384-2-3158313860.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/personaje-robot-pixel-art_642384-2-3158313860.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "personaje-robot-pixel-art_642384-2-3158313860",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/personaje-robot-pixel-art_642384-2-3158313859.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/personaje-robot-pixel-art_642384-2-3158313859.png\"}",
+        "name": "personaje-robot-pixel-art_642384-2-3158313859",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/up2.png.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/up2.png.png\",\"extension\":\".png\"}",
+        "name": "assets\\image\\up2.png.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "proto2_by_themfreak-d87wpdl-1465858786.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"proto2_by_themfreak-d87wpdl-1465858786.png\",\"extension\":\".png\"}",
+        "name": "proto2_by_themfreak-d87wpdl-1465858786.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "personaje-robot-pixel-art_642384-2-3158313859.jpg",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"personaje-robot-pixel-art_642384-2-3158313859.jpg\",\"extension\":\".png\"}",
+        "name": "personaje-robot-pixel-art_642384-2-3158313859.jpg",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -758,8 +822,26 @@
       }
     ]
   },
-  "objectsGroups": [],
-  "variables": [],
+  "objectsGroups": [
+    {
+      "name": "Enemies",
+      "objects": [
+        {
+          "name": "Tonk_the_tank"
+        },
+        {
+          "name": "Rank_the_robot"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "Enemy_Id",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -768,6 +850,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/endscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/battle"
     }
   ],
   "externalEvents": [],

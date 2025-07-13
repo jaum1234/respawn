@@ -1582,9 +1582,6 @@
           "value": "1",
           "type": "Number",
           "label": "Timer",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "Timer"
         },
@@ -1592,9 +1589,6 @@
           "value": "255;255;255",
           "type": "String",
           "label": "Color",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "Color"
         },
@@ -1602,9 +1596,6 @@
           "value": "",
           "type": "String",
           "label": "Type of effect ",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "Type"
         },
@@ -1612,9 +1603,6 @@
           "value": "",
           "type": "String",
           "label": "Direction of transition",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "Direction"
         },
@@ -1622,9 +1610,6 @@
           "value": "255",
           "type": "Number",
           "label": "The maximum of the opacity only for flash",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "MaxOpacity"
         }
