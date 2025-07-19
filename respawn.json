@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 233,
+    "build": 237,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -333,14 +333,6 @@
         "kind": "image",
         "metadata": "",
         "name": "WaterCorner2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "https://resources.gdevelop-app.com/in-app-tutorials/templates/topDownRPGMovement/assets/thumbnail.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "thumbnail.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -854,6 +846,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/battle"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/hub-central"
     }
   ],
   "externalEvents": [],
