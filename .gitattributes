@@ -1,0 +1,9 @@
+* -text
+
+*.json text eol=lf
+*.js text eol=lf
+*.c3p -text
+*.png binary
+*.jpg binary
+*.ogg binary
+*.aac binary
