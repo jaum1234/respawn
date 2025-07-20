@@ -838,6 +838,22 @@
         "name": "NewSprite3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "neo_zero_tileset_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_tileset_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "neo_zero_buildings_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_buildings_02.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1149,6 +1165,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/hub-central"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/distrito-mycora"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/cidadela"
     }
   ],
   "externalEvents": [],
