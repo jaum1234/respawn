@@ -854,6 +854,30 @@
         "name": "neo_zero_buildings_02.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/colisao.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "colisao",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "neo_zero_props_02_free.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_props_02_free.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_cidadela_sem_fundo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_cidadela_sem_fundo.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
