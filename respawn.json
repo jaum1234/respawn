@@ -878,6 +878,22 @@
         "name": "assets\\image\\boss_cidadela_sem_fundo.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1171,6 +1187,21 @@
       "name": "Enemy_Id",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "echo_posicao_x",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "echo_posicao_y",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "veio_da_cidadela",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
