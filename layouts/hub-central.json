@@ -302,7 +302,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 11,
+      "height": 6,
       "keepRatio": true,
       "layer": "",
       "name": "colisao_parede",
@@ -781,11 +781,11 @@
                       },
                       {
                         "x": 46,
-                        "y": 18.5
+                        "y": 9.5
                       },
                       {
                         "x": 0,
-                        "y": 18.5
+                        "y": 9.5
                       }
                     ]
                   ]
