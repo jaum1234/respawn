@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.8165821253960834,
+    "zoomFactor": 1.3932548895447403,
     "windowMask": false
   },
   "objectsGroups": [
@@ -98,7 +98,7 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "Player",
+      "name": "echo_the_hero",
       "persistentUuid": "eb3eb9c8-9e76-4d2e-89c0-600889f54713",
       "width": 0,
       "x": 801,
@@ -292,230 +292,6 @@
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "Player",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "PixelPerfectTopDownMovement",
-          "type": "PixelPerfectMovement::PixelPerfectTopDownMovement",
-          "TopDownMovement": "TopDownMovement",
-          "PixelSize": 16,
-          "OffsetX": 0,
-          "OffsetY": 0
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
-          "maxSpeed": 100,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.20000000298023224,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Down",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Down2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Right",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Right5",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Right6",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Left",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Left5",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Left6",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.20000000298023224,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Up",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Up2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -1166,9 +942,6 @@
         ]
       },
       {
-        "objectName": "Player"
-      },
-      {
         "objectName": "ChevronArrowUp"
       },
       {
@@ -1306,7 +1079,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Player",
+                "echo_the_hero",
                 "Collisions",
                 "yes"
               ]
@@ -1316,9 +1089,9 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "Player",
+                "echo_the_hero",
                 "=",
-                "Player.Y()"
+                "echo_the_hero.Y()"
               ]
             },
             {
@@ -1327,7 +1100,7 @@
               },
               "parameters": [
                 "",
-                "Player",
+                "echo_the_hero",
                 "",
                 "",
                 ""
@@ -1341,8 +1114,8 @@
                 "",
                 "CameraBoundaryLeft.BoundingBoxRight()",
                 "CameraBoundaryTop.BoundingBoxBottom()",
-                "Player.CenterX()+1000",
-                "Player.CenterY()+1000",
+                "echo_the_hero.CenterX() + 1000",
+                "echo_the_hero.CenterY() + 1000",
                 "",
                 ""
               ]
@@ -1414,7 +1187,7 @@
                     "value": "TopDownMovementBehavior::SimulateControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Up\""
                   ]
@@ -1442,7 +1215,7 @@
                     "value": "TopDownMovementBehavior::SimulateControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Right\""
                   ]
@@ -1470,7 +1243,7 @@
                     "value": "TopDownMovementBehavior::SimulateControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Left\""
                   ]
@@ -1498,7 +1271,7 @@
                     "value": "TopDownMovementBehavior::SimulateControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Down\""
                   ]
@@ -1513,7 +1286,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Player movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1527,7 +1299,7 @@
                     "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Up\""
                   ]
@@ -1539,7 +1311,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation",
                     "=",
                     "\"Up\""
@@ -1556,7 +1328,7 @@
                     "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Down\""
                   ]
@@ -1568,7 +1340,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation",
                     "=",
                     "\"Down\""
@@ -1585,7 +1357,7 @@
                     "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Right\""
                   ]
@@ -1597,7 +1369,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation",
                     "=",
                     "\"Right\""
@@ -1614,7 +1386,7 @@
                     "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     "\"Left\""
                   ]
@@ -1626,7 +1398,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation",
                     "=",
                     "\"Left\""
@@ -1644,7 +1416,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement"
                   ]
                 }
@@ -1655,7 +1427,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation"
                   ]
                 }
@@ -1670,7 +1442,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement"
                   ]
                 }
@@ -1681,7 +1453,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "Animation"
                   ]
                 }
@@ -1710,8 +1482,8 @@
                   },
                   "parameters": [
                     "WinMarker",
-                    "Player.CenterX()",
-                    "Player.CenterY()"
+                    "echo_the_hero.CenterX()",
+                    "echo_the_hero.CenterY()"
                   ]
                 },
                 {
@@ -1720,7 +1492,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement"
                   ]
                 },
@@ -1737,7 +1509,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Player",
+                    "echo_the_hero",
                     "TopDownMovement",
                     ""
                   ]
@@ -1800,7 +1572,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "Player",
+                "echo_the_hero",
                 "Enemies",
                 "",
                 "",
