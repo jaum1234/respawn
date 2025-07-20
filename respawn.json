@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 233,
+    "build": 237,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -333,14 +333,6 @@
         "kind": "image",
         "metadata": "",
         "name": "WaterCorner2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "https://resources.gdevelop-app.com/in-app-tutorials/templates/topDownRPGMovement/assets/thumbnail.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "thumbnail.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -774,6 +766,78 @@
         "name": "personaje-robot-pixel-art_642384-2-3158313859.jpg",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "pixel-cyberpunk-interior2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixel-cyberpunk-interior2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/porta_fechada.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\porta_fechada.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/porta_aberta.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\porta_aberta.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/banner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\banner.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ventilacao.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ventilacao.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/janela.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\janela.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/mesa.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mesa.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -812,11 +876,238 @@
         "g": 0,
         "b": 0
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "echo_the_hero",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "PixelPerfectTopDownMovement",
+          "type": "PixelPerfectMovement::PixelPerfectTopDownMovement",
+          "TopDownMovement": "TopDownMovement",
+          "PixelSize": 16,
+          "OffsetX": 0,
+          "OffsetY": 0
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 200,
+          "allowDiagonals": true,
+          "deceleration": 800,
+          "maxSpeed": 100,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "rotateObject": false,
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.20000000298023224,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Down",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Down2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Right5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Right6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Left5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Left6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.20000000298023224,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Up",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Up2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "echo_the_hero"
+      },
       {
         "objectName": "Transition"
       }
@@ -854,6 +1145,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/battle"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/hub-central"
     }
   ],
   "externalEvents": [],
