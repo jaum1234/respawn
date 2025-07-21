@@ -951,12 +951,12 @@
           "OffsetY": 0
         },
         {
+          "maxSpeed": 70,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 200,
           "allowDiagonals": true,
           "deceleration": 800,
-          "maxSpeed": 100,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
