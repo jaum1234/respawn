@@ -926,6 +926,14 @@
         "name": "NewSprite6",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1232,6 +1240,11 @@
     },
     {
       "name": "veio_da_cidadela",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "veio_do_distrito_sinapse",
       "type": "boolean",
       "value": false
     }
