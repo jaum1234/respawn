@@ -838,6 +838,62 @@
         "name": "NewSprite3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "neo_zero_tileset_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_tileset_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "neo_zero_buildings_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_buildings_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/colisao.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "colisao",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "neo_zero_props_02_free.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "neo_zero_props_02_free.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_cidadela_sem_fundo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_cidadela_sem_fundo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -895,12 +951,12 @@
           "OffsetY": 0
         },
         {
+          "maxSpeed": 70,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 200,
           "allowDiagonals": true,
           "deceleration": 800,
-          "maxSpeed": 100,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
@@ -1131,6 +1187,21 @@
       "name": "Enemy_Id",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "echo_posicao_x",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "echo_posicao_y",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "veio_da_cidadela",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -1153,6 +1224,13 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/distrito-mycora"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/cidadela"
+>>>>>>> master
     }
   ],
   "externalEvents": [],

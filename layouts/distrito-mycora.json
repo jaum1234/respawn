@@ -24,9 +24,32 @@
   "objectsGroups": [],
   "variables": [],
   "instances": [],
+<<<<<<< HEAD
   "objects": [],
   "objectsFolderStructure": {
     "folderName": "__ROOT"
+=======
+  "objects": [
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "NewTiledSprite",
+      "texture": "",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "NewTiledSprite"
+      }
+    ]
+>>>>>>> master
   },
   "events": [],
   "layers": [
