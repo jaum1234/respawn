@@ -24,11 +24,6 @@
   "objectsGroups": [],
   "variables": [],
   "instances": [],
-<<<<<<< HEAD
-  "objects": [],
-  "objectsFolderStructure": {
-    "folderName": "__ROOT"
-=======
   "objects": [
     {
       "assetStoreId": "",
@@ -49,7 +44,6 @@
         "objectName": "NewTiledSprite"
       }
     ]
->>>>>>> master
   },
   "events": [],
   "layers": [
