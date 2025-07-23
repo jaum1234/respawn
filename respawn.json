@@ -934,6 +934,14 @@
         "name": "NewSprite7",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_grid_demon_cidadela.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_grid_demon_cidadela.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
