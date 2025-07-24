@@ -1166,6 +1166,18 @@
           "parameters": [
             "ir_para_distrito_sinapse"
           ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "assets/music/cyberpunk-street.mp3",
+            "yes",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -1667,6 +1679,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Health",
+      "type": "Health::Health"
     },
     {
       "name": "Opacity",

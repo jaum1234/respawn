@@ -942,6 +942,127 @@
         "name": "assets\\image\\boss_grid_demon_cidadela.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1 Icons/5/Skillicon5_11.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/1 Icons/5/Skillicon5_11.png\",\"extension\":\".png\"}",
+        "name": "assets/1 Icons/5/Skillicon5_11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1 Icons/5/Skillicon5_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/1 Icons/5/Skillicon5_18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1 Icons/5/Skillicon5_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/1 Icons/5/Skillicon5_30.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/2 Frames/Frame_08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/2 Frames/Frame_08.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Roboto-Bold4.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Roboto-Bold4.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/cyberpunk-street.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/cyberpunk-street.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/city skyline/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/city skyline/preview.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/city skyline/cyberpunk-street.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/city skyline/cyberpunk-street.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/unnamed.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/unnamed.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dot Bar Green Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Green Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e0754c6008a7f3ec35ce32d663263982cd7a67f91974977d1c1247b90891b1b9_Dot Bar Green Border.png",
+          "name": "Dot Bar Green Border.png"
+        }
+      },
+      {
+        "file": "assets/Dot Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/11956f33bb9a6ca4997feced357ff80d8b2597367951d4ab34cd67d5a2d8b054_Dot Bar Green Fill Bar.png",
+          "name": "Dot Bar Green Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/image/boss_grid_demon_cidadela.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/boss_grid_demon_cidadela.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -991,6 +1112,35 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 50,
+          "CurrentHealth": 0,
+          "MaxHealth": 50,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "isFolded": true,
           "name": "PixelPerfectTopDownMovement",
           "type": "PixelPerfectMovement::PixelPerfectTopDownMovement",
           "TopDownMovement": "TopDownMovement",
@@ -999,6 +1149,7 @@
           "OffsetY": 0
         },
         {
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "maxSpeed": 70,
@@ -1204,6 +1355,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "boss",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\boss_grid_demon_cidadela.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 34,
+                        "y": 32
+                      },
+                      {
+                        "x": 977,
+                        "y": 32
+                      },
+                      {
+                        "x": 977,
+                        "y": 968
+                      },
+                      {
+                        "x": 34,
+                        "y": 968
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1214,6 +1425,9 @@
       },
       {
         "objectName": "Transition"
+      },
+      {
+        "objectName": "boss"
       }
     ]
   },
@@ -1235,6 +1449,11 @@
       "name": "Enemy_Id",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "turn",
+      "type": "boolean",
+      "value": true
     },
     {
       "name": "echo_posicao_x",
@@ -1308,6 +1527,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
     }
   ],
   "externalLayouts": []
