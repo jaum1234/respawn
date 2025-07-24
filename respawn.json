@@ -942,6 +942,38 @@
         "name": "assets\\image\\boss_grid_demon_cidadela.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/demoA5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\demoA5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_static_phantom_mycora.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_static_phantom_mycora.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
