@@ -974,6 +974,14 @@
         "name": "NewSprite9",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1285,6 +1293,11 @@
     },
     {
       "name": "veio_do_distrito_sinapse",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "veio_do_distrito_mycora",
       "type": "boolean",
       "value": false
     }
