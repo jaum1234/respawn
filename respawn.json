@@ -1330,6 +1330,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/distrito-sinapse"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/grande-salo"
     }
   ],
   "externalEvents": [],
