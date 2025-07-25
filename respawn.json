@@ -1518,29 +1518,14 @@
       "value": 0
     },
     {
-      "name": "veio_da_cidadela",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "veio_do_distrito_sinapse",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "veio_do_distrito_mycora",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "veio_do_grande_salao",
-      "type": "boolean",
-      "value": false
-    },
-    {
       "name": "nivel_de_ameaca",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "origem",
+      "type": "string",
+      "value": "hub_central"
     }
   ],
   "layouts": [

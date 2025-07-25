@@ -389,12 +389,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_do_distrito_mycora",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"mycora\""
           ]
         },
         {
@@ -422,6 +422,49 @@
         "includeConfig": 0
       },
       "target": "barra_de_ameaça"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "RandomInRange(0, 1000)",
+            "<",
+            "nivel_de_ameaca*0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"mycora\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Link",

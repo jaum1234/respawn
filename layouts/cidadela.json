@@ -1737,12 +1737,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_da_cidadela",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"cidadela\""
           ]
         },
         {
@@ -1762,26 +1762,16 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "StringVariable"
           },
           "parameters": [
-            "veio_do_grande_salao",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"salao\""
           ]
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "veio_do_grande_salao",
-            "False",
-            ""
-          ]
-        },
         {
           "type": {
             "value": "MettreXY"
@@ -1815,12 +1805,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_da_cidadela",
-            "False",
-            ""
+            "origem",
+            "=",
+            "\"cidadela\""
           ]
         },
         {
@@ -1848,6 +1838,49 @@
         "includeConfig": 0
       },
       "target": "barra_de_ameaça"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "RandomInRange(0, 1000)",
+            "<",
+            "nivel_de_ameaca*0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"cidadela\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Link",

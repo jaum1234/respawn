@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4789341884535268,
+    "zoomFactor": 1.3389693172845443,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -237,8 +237,8 @@
       "name": "echo_the_hero",
       "persistentUuid": "5100186e-5bab-482b-957e-dd971ce5d62e",
       "width": 0,
-      "x": 7,
-      "y": 321,
+      "x": 11,
+      "y": 314,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -256,6 +256,125 @@
       "x": 42,
       "y": 20,
       "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "59ecbe2e-25dd-4124-92ed-12288682f40c",
+      "width": 63,
+      "x": 0,
+      "y": 289,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "ee1015e6-4542-457a-8d50-5893d8bb452e",
+      "width": 200,
+      "x": 58,
+      "y": 272,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "e84c6028-ca0f-4ebb-8d2e-1738b39d2b77",
+      "width": 7,
+      "x": 256,
+      "y": 282,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "83282473-8a8d-4e2d-ad6a-4744c5c0a3e1",
+      "width": 7,
+      "x": 216,
+      "y": 373,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "fca4e73f-c36c-4ec7-937d-86cc79a7fca4",
+      "width": 156,
+      "x": 62,
+      "y": 373,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "2d47cb77-b490-489d-882d-54cfdd2ba87f",
+      "width": 7,
+      "x": 56,
+      "y": 357,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "a1bce4e8-d151-46c8-85b1-3170ba997161",
+      "width": 64,
+      "x": -8,
+      "y": 357,
+      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -474,12 +593,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_do_distrito_sinapse",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"sinapse\""
           ]
         },
         {
@@ -507,6 +626,49 @@
         "includeConfig": 0
       },
       "target": "barra_de_ameaça"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "RandomInRange(0, 1000)",
+            "<",
+            "nivel_de_ameaca*0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"sinapse\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Link",

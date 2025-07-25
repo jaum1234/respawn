@@ -326,12 +326,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_do_grande_salao",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"salao\""
           ]
         },
         {
