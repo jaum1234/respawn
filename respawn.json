@@ -1042,6 +1042,22 @@
         "name": "assets\\neo_zero_buildings_02.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1358,6 +1374,11 @@
     },
     {
       "name": "veio_do_distrito_mycora",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "veio_do_grande_salao",
       "type": "boolean",
       "value": false
     }
