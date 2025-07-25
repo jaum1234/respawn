@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 317,
+      "height": 408,
       "keepRatio": true,
       "layer": "",
       "name": "NewSprite",
       "persistentUuid": "ca4bac01-7631-4aa2-aac7-ac7dc0491d0f",
-      "width": 223,
-      "x": 183,
-      "y": 345,
+      "width": 287,
+      "x": 907,
+      "y": 375,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -70,6 +70,23 @@
       "x": 819,
       "y": 59,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 446,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite3",
+      "persistentUuid": "bcc0c8f7-ea70-4130-8a84-058bb5b0cbc7",
+      "width": 451,
+      "x": 81,
+      "y": 7,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -330,6 +347,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\globorg.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 150,
+                        "y": 40
+                      },
+                      {
+                        "x": 961,
+                        "y": 40
+                      },
+                      {
+                        "x": 961,
+                        "y": 984
+                      },
+                      {
+                        "x": 150,
+                        "y": 984
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -340,6 +417,9 @@
       },
       {
         "objectName": "Enemy_Here"
+      },
+      {
+        "objectName": "NewSprite3"
       },
       {
         "objectName": "NewSprite2"
