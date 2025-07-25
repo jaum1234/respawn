@@ -1058,6 +1058,22 @@
         "name": "NewSprite13",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/globorg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\globorg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite14.png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1381,6 +1397,11 @@
       "name": "veio_do_grande_salao",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "nivel_de_ameaca",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
