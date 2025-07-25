@@ -1074,6 +1074,17 @@
         "name": "NewSprite14",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Future Narrow.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "078f2c53113817df13b013f3ef602c397bc7ae7305b8bb97b191688940cf3bd2_Kenney Future Narrow.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/078f2c53113817df13b013f3ef602c397bc7ae7305b8bb97b191688940cf3bd2_Kenney Future Narrow.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -1436,9 +1447,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/grande-salo"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player_movement"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
