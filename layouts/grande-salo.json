@@ -18,15 +18,156 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 1.4790395861757393,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "o_grande_salao",
+      "persistentUuid": "495910a3-dec3-4c2c-9230-c1d24b12ef74",
+      "width": 0,
+      "x": 519,
+      "y": 197,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":19,\"dimY\":18,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[83,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,82],[79,135,135,135,135,135,135,135,135,135,135,135,135,135,135,135,135,135,77],[79,134,153,153,153,153,154,153,153,153,153,153,153,153,153,154,134,134,77],[79,134,154,134,134,134,134,134,134,134,134,134,154,134,134,134,134,134,77],[79,134,153,154,154,153,153,153,153,153,153,153,153,153,153,153,154,134,77],[79,172,172,52,172,172,172,172,172,172,172,172,172,172,172,172,172,172,77],[79,90,91,71,91,91,91,91,91,91,91,91,91,91,91,91,91,92,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[79,197,195,195,195,195,195,195,195,195,195,195,195,195,195,197,195,195,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[79,195,195,195,197,195,195,195,195,195,195,195,195,195,195,197,195,195,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[79,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,77],[64,59,59,59,59,59,59,45,194,195,194,44,59,59,59,59,59,59,63],[-1,-1,-1,-1,-1,-1,-1,79,194,195,194,77,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,79,217,218,219,77,-1,-1,-1,-1,-1,-1,-1]]}]}"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 169,
+      "keepRatio": true,
+      "layer": "",
+      "name": "o_arquiteto",
+      "persistentUuid": "36857eca-02f2-4fae-ac11-80aa991ef46c",
+      "width": 126,
+      "x": 609,
+      "y": 204,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "o_grande_salao",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "assets\\neo_zero_tileset_02.png",
+        "rowCount": 13,
+        "columnCount": 19,
+        "tileSize": 16,
+        "tilesWithHitBox": "4,43,134,153,190,209,191,210"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "o_arquiteto",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\boss_the_architect.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 69
+                      },
+                      {
+                        "x": 973,
+                        "y": 69
+                      },
+                      {
+                        "x": 973,
+                        "y": 1357
+                      },
+                      {
+                        "x": 40,
+                        "y": 1357
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewTileMap",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "",
+        "rowCount": 1,
+        "columnCount": 1,
+        "tileSize": 8,
+        "tilesWithHitBox": ""
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "o_grande_salao"
+      },
+      {
+        "objectName": "o_arquiteto"
+      },
+      {
+        "objectName": "NewTileMap"
+      }
+    ]
   },
   "events": [],
   "layers": [
