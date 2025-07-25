@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.4790395861757393,
+    "zoomFactor": 2.4323477282328247,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -58,6 +58,158 @@
       "x": 609,
       "y": 204,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "echo_the_hero",
+      "persistentUuid": "21813277-2988-4fcf-8193-d969cb768ee6",
+      "width": 0,
+      "x": 663,
+      "y": 434,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 234,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "1234f257-d66b-4de6-a33c-5ea0cc5212f0",
+      "width": 12,
+      "x": 807,
+      "y": 208,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 234,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "b07823ef-8cf4-491c-baaa-955378409c56",
+      "width": 12,
+      "x": 523,
+      "y": 208,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 7,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "e2070fe2-d7b3-4193-9fa6-afda71412060",
+      "width": 123,
+      "x": 524,
+      "y": 437,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 7,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "6531472c-27b9-4e6d-9048-325ae01c20fa",
+      "width": 123,
+      "x": 696,
+      "y": 437,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 17,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "7225badf-6872-4613-b9e2-5577ddbea9f0",
+      "width": 12,
+      "x": 691,
+      "y": 469,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "f50ad55d-2bd8-4a58-b8d0-d658b8c1a0f5",
+      "width": 12,
+      "x": 695,
+      "y": 437,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "57ac56ca-3abf-4e10-80b2-25b77b2ade00",
+      "width": 12,
+      "x": 635,
+      "y": 436,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "c421d145-1642-4080-a09e-2bcdf5460bdc",
+      "width": 12,
+      "x": 639,
+      "y": 469,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -153,6 +305,67 @@
         "tileSize": 8,
         "tilesWithHitBox": ""
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "colisao",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -166,6 +379,9 @@
       },
       {
         "objectName": "NewTileMap"
+      },
+      {
+        "objectName": "colisao"
       }
     ]
   },

@@ -1026,6 +1026,22 @@
         "name": "assets\\neo_zero_props_02_free.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/neo_zero_buildings_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\neo_zero_buildings_02.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

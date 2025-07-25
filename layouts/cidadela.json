@@ -1393,7 +1393,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "atlasImage": "neo_zero_tileset_02.png",
+        "atlasImage": "assets\\neo_zero_tileset_02.png",
         "rowCount": 13,
         "columnCount": 19,
         "tileSize": 16,
@@ -1408,7 +1408,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "atlasImage": "neo_zero_buildings_02.png",
+        "atlasImage": "assets\\neo_zero_buildings_02.png",
         "rowCount": 14,
         "columnCount": 42,
         "tileSize": 8,
@@ -1484,7 +1484,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "atlasImage": "neo_zero_props_02_free.png",
+        "atlasImage": "assets\\neo_zero_props_02_free.png",
         "rowCount": 12,
         "columnCount": 24,
         "tileSize": 8,
