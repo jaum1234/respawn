@@ -858,7 +858,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "colisao_parede",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -868,7 +868,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "colisao_parede",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -919,7 +919,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "topo_da_porta",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -929,7 +929,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "topo_da_porta",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -990,7 +990,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite5",
+                  "image": "ir_para_cidadela",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1051,7 +1051,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite7",
+                  "image": "ir_para_distrito_sinapse",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

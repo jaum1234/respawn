@@ -1473,7 +1473,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "voltar_para_hub_central",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1483,7 +1483,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite4",
+                  "image": "voltar_para_hub_central2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1594,7 +1594,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "ir_para_grande_salao",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1604,7 +1604,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite13",
+                  "image": "ir_para_grande_salao",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

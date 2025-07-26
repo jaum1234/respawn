@@ -892,7 +892,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "voltar_para_hub_central",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -902,7 +902,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite6",
+                  "image": "voltar_para_hub_central3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

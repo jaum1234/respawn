@@ -1117,6 +1117,70 @@
         "name": "ir_para_distrito_mycora",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_distrito_sinapse.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_distrito_sinapse",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_cidadela.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_cidadela",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/colisao_parede.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "colisao_parede",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/topo_da_porta.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "topo_da_porta",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_grande_salao.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_grande_salao",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
