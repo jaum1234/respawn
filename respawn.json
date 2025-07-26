@@ -1085,6 +1085,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/078f2c53113817df13b013f3ef602c397bc7ae7305b8bb97b191688940cf3bd2_Kenney Future Narrow.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/image/logo_respawned.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\logo_respawned.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

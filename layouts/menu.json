@@ -34,9 +34,26 @@
       "name": "iniciar_nova_rodada",
       "persistentUuid": "05cbe12a-d775-4764-b59c-2716a6c06626",
       "width": 238,
-      "x": 534,
-      "y": 339,
+      "x": 539,
+      "y": 379,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 314,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "f12ae72a-6b12-43f7-b376-bf482728d40b",
+      "width": 321,
+      "x": 495,
+      "y": 55,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -95,6 +112,66 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\logo_respawned.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 38,
+                        "y": 113
+                      },
+                      {
+                        "x": 469,
+                        "y": 113
+                      },
+                      {
+                        "x": 469,
+                        "y": 396
+                      },
+                      {
+                        "x": 38,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -102,6 +179,9 @@
     "children": [
       {
         "objectName": "iniciar_nova_rodada"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
