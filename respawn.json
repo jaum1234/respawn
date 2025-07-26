@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 237,
+    "build": 238,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -922,7 +922,7 @@
       {
         "file": "assets/NewSprite6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
         "name": "NewSprite6",
         "smoothed": false,
         "userAdded": false
@@ -944,9 +944,25 @@
         "userAdded": false
       },
       {
+        "file": "assets/image/demoA5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\demoA5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_static_phantom_mycora.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_static_phantom_mycora.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/NewSprite8.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
+        "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite8",
         "smoothed": false,
         "userAdded": false
@@ -976,6 +992,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/image/pixel-cyberpunk-interior.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\pixel-cyberpunk-interior.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/1 Icons/5/Skillicon5_30.png",
         "kind": "image",
         "metadata": "",
@@ -984,10 +1008,26 @@
         "userAdded": false
       },
       {
+        "file": "assets/neo_zero_tileset_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\neo_zero_tileset_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/2 Frames/Frame_08.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/2 Frames/Frame_08.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_the_architect.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\boss_the_architect.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1065,6 +1105,93 @@
         "userAdded": false
       },
       {
+        "file": "assets/tilemap_packed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed3.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
+          "name": "tilemap_packed3.png"
+        }
+      },
+      {
+        "file": "assets/neo_zero_props_02_free.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\neo_zero_props_02_free.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/neo_zero_buildings_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\neo_zero_buildings_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/globorg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\globorg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite14.png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Future Narrow.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "078f2c53113817df13b013f3ef602c397bc7ae7305b8bb97b191688940cf3bd2_Kenney Future Narrow.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/078f2c53113817df13b013f3ef602c397bc7ae7305b8bb97b191688940cf3bd2_Kenney Future Narrow.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/image/logo_respawned.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\logo_respawned.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "550332__wax_vibe__cyberpunk-bass.wav",
         "kind": "audio",
         "metadata": "",
@@ -1082,6 +1209,102 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/cyruk_hai.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\cyruk_hai.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_cidadela.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_cidadela",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_distrito_mycora.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_distrito_mycora",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_distrito_sinapse.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_distrito_sinapse",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_cidadela.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_cidadela",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/colisao_parede.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "colisao_parede",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/topo_da_porta.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "topo_da_porta",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_grande_salao.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_grande_salao",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_hub_central3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_hub_central3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/barra_ameaca.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "barra_ameaca",
+        "smoothed": false,
         "userAdded": false
       }
     ],
@@ -1379,7 +1602,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "boss",
+      "name": "barra_ameaca",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1387,16 +1610,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "barra_ameaca",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\image\\boss_grid_demon_cidadela.png",
+                  "image": "barra_ameaca",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1412,20 +1636,81 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 34,
-                        "y": 32
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 977,
-                        "y": 32
+                        "x": 64,
+                        "y": 0
                       },
                       {
-                        "x": 977,
-                        "y": 968
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 34,
-                        "y": 968
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "colisao",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "colisao",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "colisao",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
                       }
                     ]
                   ]
@@ -1444,10 +1729,13 @@
         "objectName": "echo_the_hero"
       },
       {
+        "objectName": "barra_ameaca"
+      },
+      {
         "objectName": "Transition"
       },
       {
-        "objectName": "boss"
+        "objectName": "colisao"
       }
     ]
   },
@@ -1486,25 +1774,17 @@
       "value": 0
     },
     {
-      "name": "veio_da_cidadela",
-      "type": "boolean",
-      "value": false
+      "name": "nivel_de_ameaca",
+      "type": "number",
+      "value": 0
     },
     {
-      "name": "veio_do_distrito_sinapse",
-      "type": "boolean",
-      "value": false
+      "name": "origem",
+      "type": "string",
+      "value": "hub_central"
     }
   ],
   "layouts": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/overworld"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/endscreen"
-    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/battle"
@@ -1524,9 +1804,34 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/distrito-sinapse"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/grande-salo"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player_movement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/barra_de_ameaa"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/centralizar_camera_e_colisao"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/no_inicio_da_cena"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

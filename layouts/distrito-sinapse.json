@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.061571430522002,
+    "zoomFactor": 0.281725993207958,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -172,40 +172,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "051e9996-940b-4b30-95e1-375dbab1355a",
-      "width": 63,
-      "x": 0,
-      "y": 291,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "bf1da926-7cb7-44a3-a192-c8bc97de9b68",
-      "width": 192,
-      "x": 63,
-      "y": 276,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 40,
       "keepRatio": true,
       "layer": "",
@@ -215,635 +181,6 @@
       "x": -8,
       "y": 323,
       "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 112,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "7cdb53e6-fae4-4a8d-b2ec-517e2bdd328e",
-      "width": 14,
-      "x": 257,
-      "y": 287,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "d0b798cf-807b-4e71-a16a-9d5690150be2",
-      "width": 155,
-      "x": 63,
-      "y": 374,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "5e8b1c29-33c5-494e-8715-46931ac488d0",
-      "width": 59,
-      "x": 1,
-      "y": 357,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 14,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "0f749c5b-f146-4f45-888e-4895b47932e3",
-      "width": 6,
-      "x": 57,
-      "y": 361,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 22,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "7bf0eac6-6d5f-4313-9f54-74f982de2c8c",
-      "width": 6,
-      "x": 217,
-      "y": 377,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "85c983d7-01f2-46f4-b95d-6385a1379bb1",
-      "width": 48,
-      "x": 175,
-      "y": 405,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "316c4e7f-e47f-4054-ab0e-6ae825612f7e",
-      "width": 30,
-      "x": 257,
-      "y": 405,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "c68453d6-0d47-4589-800d-a6471f09a95e",
-      "width": 79,
-      "x": 16,
-      "y": 405,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 32,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "5fbe7aee-176d-4b38-b4e6-803cd7b072cc",
-      "width": 6,
-      "x": 169,
-      "y": 416,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 32,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "97e41a76-ca83-4ab6-998a-14923afcba55",
-      "width": 6,
-      "x": 169,
-      "y": 485,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 5,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "d44ebbc1-8c73-4d67-9675-a6a6a3a43ac2",
-      "width": 34,
-      "x": 134,
-      "y": 475,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 5,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "9d2eb25a-690d-474f-a4b0-895a3805d581",
-      "width": 40,
-      "x": 129,
-      "y": 443,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 5,
-      "customSize": true,
-      "depth": 1,
-      "height": 2,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "a571c4c3-a4b9-4734-9bb7-24db642a379b",
-      "width": 15,
-      "x": 167,
-      "y": 476,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 355,
-      "customSize": true,
-      "depth": 1,
-      "height": 2,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "b6e0c9ae-0301-4d75-b6ae-b681cfbd8692",
-      "width": 15,
-      "x": 119,
-      "y": 476,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 118,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "c1bd1253-bcca-43d1-9baf-a3de325f9bff",
-      "width": 6,
-      "x": 9,
-      "y": 416,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "2f2e1813-69ff-45a7-8806-b5b3d94e86eb",
-      "width": 113,
-      "x": 16,
-      "y": 533,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 49,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "0055b37f-2641-40ce-b038-8c7292720e1c",
-      "width": 6,
-      "x": 128,
-      "y": 485,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "8e95edb2-030c-4dd8-9f9c-0d073e5fcdc0",
-      "width": 32,
-      "x": 96,
-      "y": 421,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "197a8b72-a386-4362-8e2f-eb85e2f6ddcf",
-      "width": 593,
-      "x": 175,
-      "y": 517,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "113e248d-6a16-4b58-8536-d0a6b44bb60d",
-      "width": 15,
-      "x": 288,
-      "y": 437,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "97f8acc0-7e0b-45e3-9ce5-828dd467ecca",
-      "width": 430,
-      "x": 304,
-      "y": 453,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "435033a5-f36a-418e-8eaf-e48c95462425",
-      "width": 239,
-      "x": 496,
-      "y": 453,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "fd5e2d03-daa2-420e-94b6-b4456e535960",
-      "width": 16,
-      "x": 752,
-      "y": 453,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 53,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "4c6c2269-3983-45c9-a021-195eae4e1b26",
-      "width": 6,
-      "x": 768,
-      "y": 464,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 31,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "063c43a1-d4f3-4ba3-9f29-4c9ec5e8781c",
-      "width": 6,
-      "x": 753,
-      "y": 421,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 31,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "04cc746b-1a37-436f-b124-00aedd34a19f",
-      "width": 6,
-      "x": 729,
-      "y": 421,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 106,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "2b74a019-26ce-4357-ab6b-8cc660c73158",
-      "width": 6,
-      "x": 713,
-      "y": 321,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 102,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "deff3515-d554-4b8d-b6d2-acb1897c952b",
-      "width": 6,
-      "x": 768,
-      "y": 325,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "b69d95d5-fd51-4408-998a-fcb5bff77dc8",
-      "width": 10,
-      "x": 719,
-      "y": 421,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "7c69f819-f073-4f1c-ab0f-482d6c06d0c9",
-      "width": 10,
-      "x": 758,
-      "y": 421,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "ca979e62-afee-4a07-a6ad-999f1fbcc5cf",
-      "width": 10,
-      "x": 716,
-      "y": 426,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "c347a439-4c49-41fe-9886-e7ce372f31b2",
-      "width": 16,
-      "x": 719,
-      "y": 324,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "f7755a76-cab3-49a9-80f0-a827b800ec17",
-      "width": 16,
-      "x": 752,
-      "y": 323,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 148,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "d1b8a933-3b38-4fe4-b506-12f780b70817",
-      "width": 6,
-      "x": 729,
-      "y": 176,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 140,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "940c0b03-c32f-4156-a0d0-7c9d9bb5f79c",
-      "width": 6,
-      "x": 848,
-      "y": 175,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "1b1d6423-9146-48c3-84a0-6175c0a29366",
-      "width": 95,
-      "x": 753,
-      "y": 309,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "ccd7b55c-9d9f-4f43-9090-e5e4efa72075",
-      "width": 112,
-      "x": 736,
-      "y": 180,
-      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -868,40 +205,6 @@
           "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":4,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[60,61,60,62]]}]}"
         }
       ],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "19248c44-3ca4-4fad-a94b-ddd0e696148d",
-      "width": 14,
-      "x": 174,
-      "y": 285,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "colisao",
-      "persistentUuid": "ba7af514-01ff-41cf-8688-41d00131ba1b",
-      "width": 26,
-      "x": 223,
-      "y": 284,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
       "initialVariables": []
     },
     {
@@ -934,9 +237,569 @@
       "name": "echo_the_hero",
       "persistentUuid": "5100186e-5bab-482b-957e-dd971ce5d62e",
       "width": 0,
-      "x": 7,
-      "y": 321,
+      "x": 8,
+      "y": 319,
       "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.6975308641975304,
+      "height": 40.74074074074073,
+      "layer": "Layer",
+      "name": "barra_ameaca",
+      "persistentUuid": "dac34cc5-2811-4303-9656-b4b21860f12b",
+      "width": 200,
+      "x": 42,
+      "y": 20,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "59ecbe2e-25dd-4124-92ed-12288682f40c",
+      "width": 63,
+      "x": 0,
+      "y": 289,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "ee1015e6-4542-457a-8d50-5893d8bb452e",
+      "width": 200,
+      "x": 58,
+      "y": 272,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "e84c6028-ca0f-4ebb-8d2e-1738b39d2b77",
+      "width": 7,
+      "x": 256,
+      "y": 282,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "83282473-8a8d-4e2d-ad6a-4744c5c0a3e1",
+      "width": 7,
+      "x": 216,
+      "y": 373,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "fca4e73f-c36c-4ec7-937d-86cc79a7fca4",
+      "width": 156,
+      "x": 62,
+      "y": 373,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "2d47cb77-b490-489d-882d-54cfdd2ba87f",
+      "width": 7,
+      "x": 56,
+      "y": 357,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "a1bce4e8-d151-46c8-85b1-3170ba997161",
+      "width": 64,
+      "x": -8,
+      "y": 357,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "0f89b805-3953-4449-bbb4-d71f6f6dc6c9",
+      "width": 90,
+      "x": 11,
+      "y": 401,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 136,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "2d18eeb4-755f-4ce1-b405-79af23d1719b",
+      "width": 7,
+      "x": 9,
+      "y": 402,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "0e4a2001-c289-42cb-b4b1-be46b09ac82b",
+      "width": 118,
+      "x": 15,
+      "y": 531,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 51,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "597da08a-99cc-4410-b6cd-05e5b9704437",
+      "width": 7,
+      "x": 127,
+      "y": 483,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "eb89bd4d-da41-4cf0-bb14-1e77f410ace2",
+      "width": 33,
+      "x": 96,
+      "y": 417,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "3f2eb62c-497f-43bb-9a5e-2a886fafa808",
+      "width": 52,
+      "x": 171,
+      "y": 400,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "cf21676b-2759-4085-8f2a-c986be3d3ecd",
+      "width": 38,
+      "x": 256,
+      "y": 401,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "d11ba7e7-c625-424e-a8df-91dd19d5c58e",
+      "width": 22,
+      "x": 288,
+      "y": 414,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "e5f37062-c33f-4e64-ad01-3ee1457ed8f5",
+      "width": 432,
+      "x": 304,
+      "y": 449,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "3b8e4b2c-7af9-44f8-8566-3ec026ce4854",
+      "width": 600,
+      "x": 169,
+      "y": 516,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "8e3ca2b1-eb9f-4fa2-b045-f717770902ed",
+      "width": 7,
+      "x": 169,
+      "y": 483,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 11,
+      "customSize": true,
+      "depth": 3,
+      "height": 3,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "93b340a3-156b-45ec-bb64-a120ed0b9773",
+      "width": 16,
+      "x": 167,
+      "y": 478,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 349,
+      "customSize": true,
+      "depth": 3,
+      "height": 3,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "c3372129-927b-4efe-bc24-ddf323f72daf",
+      "width": 16,
+      "x": 119,
+      "y": 478,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 3,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "facfff2d-919d-4b99-9309-16d27bffb1b4",
+      "width": 34,
+      "x": 134,
+      "y": 476,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 35,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "802ab76a-4f45-42f0-bd6c-23601e49a153",
+      "width": 47,
+      "x": 129,
+      "y": 412,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 67,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "c1b8cfb8-7460-4640-9559-4028eb36c6e0",
+      "width": 10,
+      "x": 768,
+      "y": 452,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "64bccfad-c118-464a-9840-9d3e22dadd65",
+      "width": 15,
+      "x": 752,
+      "y": 421,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "76f2ae4e-9637-4377-9811-f5c72e8b2718",
+      "width": 15,
+      "x": 721,
+      "y": 420,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 109,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "da50c9bc-bd4c-4242-93a5-5826f1a1b59e",
+      "width": 15,
+      "x": 704,
+      "y": 320,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 109,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "91404a82-5cd8-4a75-a84c-ce144330daca",
+      "width": 15,
+      "x": 767,
+      "y": 325,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 160,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "6186d4e2-dea2-4431-a241-536cfbeb67c7",
+      "width": 15,
+      "x": 720,
+      "y": 176,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 19,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "36f61f1c-9284-4e6e-9672-0469157de33d",
+      "width": 15,
+      "x": 752,
+      "y": 317,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 141,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "5bcaf309-510b-415d-9157-16f279132157",
+      "width": 15,
+      "x": 847,
+      "y": 174,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 19,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "85989eea-95eb-462f-bd6d-d9376c8607d0",
+      "width": 112,
+      "x": 735,
+      "y": 175,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 19,
+      "keepRatio": true,
+      "layer": "",
+      "name": "colisao",
+      "persistentUuid": "61fed48a-508e-4cb6-a605-2ab5aa18ac5b",
+      "width": 102,
+      "x": 753,
+      "y": 307,
+      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1021,67 +884,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "colisao",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "colisao",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "colisao2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "voltar_para_hub_central",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1090,7 +892,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "voltar_para_hub_central",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1100,7 +902,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite6",
+                  "image": "voltar_para_hub_central3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1151,14 +953,18 @@
         "objectName": "the_glitch_king"
       },
       {
-        "objectName": "colisao"
-      },
-      {
         "objectName": "voltar_para_hub_central"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "no_inicio_da_cena"
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -1172,25 +978,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "colisao"
-          ]
-        },
         {
           "type": {
             "value": "Cache"
@@ -1243,12 +1030,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_do_distrito_sinapse",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"sinapse\""
           ]
         },
         {
@@ -1264,218 +1051,107 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "player_movement"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "barra_de_ameaça"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "conditions": [
         {
           "type": {
-            "value": "CentreCamera"
+            "value": "BuiltinCommonInstructions::CompareNumbers"
           },
           "parameters": [
-            "",
-            "echo_the_hero",
-            "",
-            "",
-            ""
+            "RandomInRange(0, 1000)",
+            "<",
+            "nivel_de_ameaca*0.1"
           ]
         },
         {
           "type": {
-            "value": "SeparateFromObjects"
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "echo_the_hero",
-            "colisao",
+            "origem",
+            "=",
+            "\"sinapse\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
             ""
           ]
         }
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Player movement",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Up\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Up\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Down\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Down\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Right\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Left\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation"
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "centralizar_camera_e_colisao"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "echo_the_hero",
+            "the_glitch_king",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"the_glitch_king\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -1505,6 +1181,59 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Layer",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
