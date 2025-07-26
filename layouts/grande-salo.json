@@ -172,7 +172,7 @@
       "name": "colisao",
       "persistentUuid": "33a98bb8-93e6-4072-be32-6f988327d26b",
       "width": 12,
-      "x": 522,
+      "x": 523,
       "y": 207,
       "zOrder": 7,
       "numberProperties": [],
@@ -471,6 +471,45 @@
         "includeConfig": 0
       },
       "target": "player_movement"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "echo_the_hero",
+            "o_arquiteto",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"arquiteto\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Link",
