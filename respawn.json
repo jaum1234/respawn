@@ -1063,6 +1063,26 @@
         "name": "assets/image/boss_grid_demon_cidadela.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "550332__wax_vibe__cyberpunk-bass.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "550332__wax_vibe__cyberpunk-bass.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "385046__mortisblack__damage.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "385046__mortisblack__damage.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

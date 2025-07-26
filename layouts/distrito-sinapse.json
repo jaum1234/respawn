@@ -1209,6 +1209,18 @@
             "=",
             "\"Up\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "assets/music/cyberpunk-street.mp3",
+            "",
+            "50",
+            ""
+          ]
         }
       ]
     },
