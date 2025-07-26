@@ -1101,6 +1101,22 @@
         "name": "assets\\image\\cyruk_hai.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/voltar_para_cidadela.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "voltar_para_cidadela",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ir_para_distrito_mycora.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ir_para_distrito_mycora",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1375,7 +1391,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "barra_ameaca",
           "useMultipleDirections": false,
           "directions": [
             {

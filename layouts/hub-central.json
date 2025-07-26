@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.4790395861757406,
+    "zoomFactor": 1.0269425874981086,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -980,7 +980,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "ir_para_cidadela",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1041,7 +1041,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "ir_para_distrito_sinapse",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1102,7 +1102,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "ir_para_distrito_mycora",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1112,7 +1112,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite10",
+                  "image": "ir_para_distrito_mycora",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

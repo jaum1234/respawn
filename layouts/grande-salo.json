@@ -316,7 +316,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "voltar_para_cidadela",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -326,7 +326,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite12",
+                  "image": "voltar_para_cidadela",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
