@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 237,
+    "build": 238,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1091,6 +1091,14 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\image\\logo_respawned.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/cyruk_hai.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\cyruk_hai.png",
         "smoothed": false,
         "userAdded": false
       }
