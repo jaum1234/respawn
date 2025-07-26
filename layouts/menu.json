@@ -48,7 +48,7 @@
       "height": 314,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite",
+      "name": "nome_jogo",
       "persistentUuid": "f12ae72a-6b12-43f7-b376-bf482728d40b",
       "width": 321,
       "x": 495,
@@ -116,7 +116,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "nome_jogo",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -181,7 +181,7 @@
         "objectName": "iniciar_nova_rodada"
       },
       {
-        "objectName": "NewSprite"
+        "objectName": "nome_jogo"
       }
     ]
   },

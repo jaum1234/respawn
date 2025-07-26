@@ -291,21 +291,6 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "name": "NewTileMap",
-      "type": "TileMap::SimpleTileMap",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "atlasImage": "",
-        "rowCount": 1,
-        "columnCount": 1,
-        "tileSize": 8,
-        "tilesWithHitBox": ""
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "voltar_para_cidadela",
@@ -375,9 +360,6 @@
       },
       {
         "objectName": "o_arquiteto"
-      },
-      {
-        "objectName": "NewTileMap"
       },
       {
         "objectName": "voltar_para_cidadela"
