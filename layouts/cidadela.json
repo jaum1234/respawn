@@ -1398,6 +1398,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 40.74074074074073,
+      "layer": "Layer",
+      "name": "barra_ameaca",
+      "persistentUuid": "37d20d0a-3c54-44d4-83da-a8f18ab5fd50",
+      "width": 200,
+      "x": 42,
+      "y": 20,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1430,67 +1446,6 @@
         "tileSize": 8,
         "tilesWithHitBox": ""
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "colisao",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "colisao",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "colisao",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "",
@@ -1703,9 +1658,6 @@
         "objectName": "edifícios"
       },
       {
-        "objectName": "colisao"
-      },
-      {
         "objectName": "acessorios"
       },
       {
@@ -1717,6 +1669,13 @@
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "no_inicio_da_cena"
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -1730,25 +1689,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "colisao"
-          ]
-        },
         {
           "type": {
             "value": "Cache"
@@ -1780,34 +1720,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "echo_the_hero",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "echo_the_hero",
-            "colisao",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -1825,12 +1737,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_da_cidadela",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"cidadela\""
           ]
         },
         {
@@ -1850,26 +1762,16 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "StringVariable"
           },
           "parameters": [
-            "veio_do_grande_salao",
-            "True",
-            ""
+            "origem",
+            "=",
+            "\"salao\""
           ]
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "veio_do_grande_salao",
-            "False",
-            ""
-          ]
-        },
         {
           "type": {
             "value": "MettreXY"
@@ -1903,12 +1805,12 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "veio_da_cidadela",
-            "False",
-            ""
+            "origem",
+            "=",
+            "\"cidadela\""
           ]
         },
         {
@@ -1924,190 +1826,107 @@
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Player movement",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Up\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Up\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Down\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Down\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Right\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation",
-                "=",
-                "\"Left\""
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation"
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "TopDownMovement"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
-              },
-              "parameters": [
-                "echo_the_hero",
-                "Animation"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "player_movement"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "barra_de_ameaça"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "RandomInRange(0, 1000)",
+            "<",
+            "nivel_de_ameaca*0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"cidadela\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "echo_the_hero",
+            "boss",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "origem",
+            "=",
+            "\"cyrog\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Battle\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "centralizar_camera_e_colisao"
     }
   ],
   "layers": [
