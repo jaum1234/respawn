@@ -1181,6 +1181,14 @@
         "name": "voltar_para_hub_central3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/barra_ameaca.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "barra_ameaca",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1465,7 +1473,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite14",
+                  "image": "barra_ameaca",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
