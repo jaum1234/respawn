@@ -2766,6 +2766,309 @@
       "name": "batalha",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "nivel_atual",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "xp_atual",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "echo",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "globorgue",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 8
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 6
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "static_phantom",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 8
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 240
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "cyruk",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 12
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "the_glitch_king",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 14
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 12
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 180
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 300
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "fell_bot",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 16
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 12
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 140
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 140
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "cyrog",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 18
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 14
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 220
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 420
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "arquiteto",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 22
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 16
+        },
+        {
+          "name": "hp",
+          "type": "number",
+          "value": 300
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "nivel_2",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 400
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "nivel_3",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 900
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "nivel_4",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 1600
+        }
+      ]
+    },
+    {
+      "name": "nivel_5",
+      "type": "structure",
+      "children": [
+        {
+          "name": "ataque",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "defesa",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 2500
+        }
+      ]
     }
   ],
   "layouts": [
@@ -2818,6 +3121,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/no_inicio_da_cena"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/upando_nivel"
     }
   ],
   "eventsFunctionsExtensions": [
