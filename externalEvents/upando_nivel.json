@@ -28,9 +28,19 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "nivel_atual",
+            "nivel_atual.id",
             "=",
             "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nivel_atual.xp",
+            "=",
+            "nivel_2.xp"
           ]
         },
         {
@@ -51,6 +61,17 @@
             "echo.defesa",
             "+",
             "nivel_2.defesa"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "BlueDotBar",
+            "=",
+            "nivel_3.xp - nivel_2.xp",
+            ""
           ]
         }
       ]
@@ -81,9 +102,19 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "nivel_atual",
+            "nivel_atual.id",
             "=",
             "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nivel_atual.xp",
+            "=",
+            "nivel_3.xp"
           ]
         },
         {
@@ -104,6 +135,17 @@
             "echo.defesa",
             "+",
             "nivel_3.defesa"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "BlueDotBar",
+            "=",
+            "nivel_3.xp - nivel_2.xp",
+            ""
           ]
         }
       ]
@@ -134,9 +176,19 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "nivel_atual",
+            "nivel_atual.id",
             "=",
             "4"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nivel_atual.xp",
+            "=",
+            "nivel_4.xp"
           ]
         },
         {
@@ -157,6 +209,17 @@
             "echo.defesa",
             "+",
             "nivel_4.defesa"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "BlueDotBar",
+            "=",
+            "nivel_4.xp - nivel_3.xp",
+            ""
           ]
         }
       ]
@@ -187,9 +250,19 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "nivel_atual",
+            "nivel_atual.id",
             "=",
             "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nivel_atual.xp",
+            "=",
+            "0"
           ]
         },
         {
@@ -210,6 +283,34 @@
             "echo.defesa",
             "+",
             "nivel_5.defesa"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "BlueDotBar",
+            "=",
+            "xp_atual",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "BlueDotBar",
+            "=",
+            "xp_atual - nivel_atual.xp",
+            ""
           ]
         }
       ]

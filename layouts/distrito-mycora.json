@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.993459038490212,
+    "zoomFactor": 0.8700232859857361,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -161,13 +161,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.2345679012345678,
-      "height": 40.74074074074073,
+      "depth": 0.6172839506172839,
+      "height": 20.370370370370367,
       "keepRatio": true,
       "layer": "Layer",
       "name": "barra_ameaca",
       "persistentUuid": "41f4a8ff-1ad2-4a39-a677-55fbf3b196db",
-      "width": 200,
+      "width": 100,
       "x": 42,
       "y": 20,
       "zOrder": 10,
@@ -718,6 +718,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 26,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "BlueDotBar",
+      "persistentUuid": "b77c8534-9b32-426d-8200-26fd9e379a8f",
+      "width": 103,
+      "x": 40,
+      "y": 56,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1055,6 +1072,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "upando_nivel"
     }
   ],
   "layers": [

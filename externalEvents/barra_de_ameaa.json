@@ -30,6 +30,16 @@
             "echo_the_hero",
             "TopDownMovement"
           ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "nivel_de_ameaca",
+            "<=",
+            "100"
+          ]
         }
       ],
       "actions": [
