@@ -4072,7 +4072,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "começo cena",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4271,6 +4270,18 @@
               },
               "parameters": [
                 "perdeu"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetMaxHealthOp"
+              },
+              "parameters": [
+                "echo_the_hero",
+                "Health",
+                "=",
+                "echo_att.hp",
+                ""
               ]
             }
           ],
@@ -4749,6 +4760,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5022,7 +5034,7 @@
                       "parameters": [
                         "globorg",
                         "Health",
-                        "20",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5062,7 +5074,7 @@
                       "parameters": [
                         "cyruk",
                         "Health",
-                        "10",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5102,7 +5114,7 @@
                       "parameters": [
                         "fell_bot",
                         "Health",
-                        "15",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5142,7 +5154,7 @@
                       "parameters": [
                         "staticPhantom",
                         "Health",
-                        "15",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5182,7 +5194,7 @@
                       "parameters": [
                         "glitch_king",
                         "Health",
-                        "15",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5222,7 +5234,7 @@
                       "parameters": [
                         "cyrog",
                         "Health",
-                        "15",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5262,7 +5274,7 @@
                       "parameters": [
                         "architect",
                         "Health",
-                        "15",
+                        "echo_att.ataque",
                         "",
                         "",
                         ""
@@ -5388,7 +5400,7 @@
                     "echo_the_hero",
                     "Health",
                     "=",
-                    "6",
+                    "echo_att.defesa",
                     ""
                   ]
                 },
@@ -5475,7 +5487,7 @@
                   "parameters": [
                     "echo_the_hero",
                     "Health",
-                    "15",
+                    "the_glitch_king_att.ataque",
                     "",
                     "",
                     ""
@@ -5503,11 +5515,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "acoes inimigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5911,6 +5925,7 @@
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5961,7 +5976,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "(nivel_de_ameaca/100) * 50",
+                            "globorgue_att.ataque * nivel_de_ameaca * 0.1",
                             "",
                             "",
                             ""
@@ -6013,7 +6028,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "(nivel_de_ameaca/100) * 50",
+                            "cyruk_att.ataque * nivel_de_ameaca * 0.1",
                             "",
                             "",
                             ""
@@ -6065,7 +6080,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "(nivel_de_ameaca/100) * 50",
+                            "fell_bot_att.ataque * nivel_de_ameaca * 0.1",
                             "",
                             "",
                             ""
@@ -6117,7 +6132,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "10",
+                            "static_phantom_att.ataque",
                             "",
                             "",
                             ""
@@ -6170,7 +6185,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "15",
+                            "the_glitch_king_att.ataque",
                             "",
                             "",
                             ""
@@ -6252,7 +6267,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "20",
+                            "cyrog_att.ataque",
                             "",
                             "",
                             ""
@@ -6333,7 +6348,7 @@
                           "parameters": [
                             "echo_the_hero",
                             "Health",
-                            "25",
+                            "arquiteto_att.ataque",
                             "",
                             "",
                             ""
@@ -7208,6 +7223,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "cyruk_att.xp"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -7262,6 +7287,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "fell_bot_att.xp"
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
@@ -7320,6 +7355,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "globorgue_att.xp"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -7374,6 +7419,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "static_phantom_att.xp"
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
@@ -7432,6 +7487,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "the_glitch_king_att.xp"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -7486,6 +7551,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "xp_atual",
+                "+",
+                "cyrog_att.xp"
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
