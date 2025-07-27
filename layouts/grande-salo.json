@@ -483,6 +483,26 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_x",
+            "=",
+            "echo_the_hero.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_y",
+            "=",
+            "echo_the_hero.Y()"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [

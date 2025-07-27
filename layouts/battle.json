@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740941,
+    "zoomFactor": 0.7619362677197614,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -77,8 +77,8 @@
       "name": "Enemy_Here",
       "persistentUuid": "8a7e2c27-768e-4f87-9cd1-0ba1a03846a1",
       "width": 83,
-      "x": 890,
-      "y": 274,
+      "x": 874,
+      "y": 263,
       "zOrder": 700,
       "numberProperties": [],
       "stringProperties": [],
@@ -325,9 +325,43 @@
       "name": "Attack_Here",
       "persistentUuid": "63c65cf3-4f83-47a3-a2f2-00511e86cbea",
       "width": 73,
-      "x": 232,
-      "y": 490,
+      "x": 237,
+      "y": 489,
       "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 121,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Vitória",
+      "persistentUuid": "0a62b8ce-fe22-4fbe-babb-50b2401eaca4",
+      "width": 523,
+      "x": 369,
+      "y": 553,
+      "zOrder": 5000,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 105,
+      "keepRatio": true,
+      "layer": "",
+      "name": "perdeu",
+      "persistentUuid": "f79230b3-b028-45f2-ac94-208e6ea24b31",
+      "width": 476,
+      "x": 392,
+      "y": 553,
+      "zOrder": 5000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1632,16 +1666,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "assets/poof GR 1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.1,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof GR 1.png",
+                  "image": "assets/poof GR 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1677,7 +1712,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof GR 2.png",
+                  "image": "assets/poof GR 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1713,7 +1748,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof GR 3.png",
+                  "image": "assets/poof GR 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1749,7 +1784,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof GR 4.png",
+                  "image": "assets/poof GR 4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1785,7 +1820,43 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof GR 5.png",
+                  "image": "assets/poof GR 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/poof GR 1",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1846,12 +1917,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof OJ 1.png",
+                  "image": "assets/poof OJ 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1882,12 +1953,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof OJ 2.png",
+                  "image": "assets/poof OJ 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1918,12 +1989,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof OJ 3.png",
+                  "image": "assets/poof OJ 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1954,12 +2025,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof OJ 4.png",
+                  "image": "assets/poof OJ 4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1990,48 +2061,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof OJ 5.png",
+                  "image": "poof OJ2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 56,
-                        "y": 51
-                      },
-                      {
-                        "x": 170,
-                        "y": 51
-                      },
-                      {
-                        "x": 170,
-                        "y": 166
-                      },
-                      {
-                        "x": 56,
-                        "y": 166
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "poof OJ 1",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2077,21 +2112,22 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "assets/poof PU 1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.1,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof PU 1.png",
+                  "image": "assets/poof PU 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2122,12 +2158,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof PU 2.png",
+                  "image": "assets/poof PU 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2158,12 +2194,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof PU 3.png",
+                  "image": "assets/poof PU 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2194,12 +2230,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof PU 4.png",
+                  "image": "assets/poof PU 4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2230,12 +2266,48 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "poof PU 5.png",
+                  "image": "assets/poof PU 5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 125.5,
-                    "y": 125.5
+                    "y": 100
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/poof PU 1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 100
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2287,16 +2359,16 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.1,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "splosion 1.png",
+                  "image": "assets/splosion 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2327,12 +2399,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "splosion 2.png",
+                  "image": "assets/splosion 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2363,12 +2435,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "splosion 3.png",
+                  "image": "assets/splosion 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2399,12 +2471,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "splosion 4.png",
+                  "image": "assets/splosion 4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2435,48 +2507,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "../../../Downloads/FX Bundle/Splosion/splosion 4.png",
+                  "image": "splosion2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
                     "x": 0,
                     "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 26,
-                        "y": 25
-                      },
-                      {
-                        "x": 51,
-                        "y": 25
-                      },
-                      {
-                        "x": 51,
-                        "y": 53
-                      },
-                      {
-                        "x": 26,
-                        "y": 53
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "splosion 1",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 40.5,
-                    "y": 40.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3099,16 +3135,17 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.13,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Orb attack/fire ball orb death fx 1.png",
+                  "image": "assets/Orb attack/fire ball orb death fx 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 37.5,
+                    "y": 37.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3139,12 +3176,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Orb attack/fire ball orb death fx 2.png",
+                  "image": "assets/Orb attack/fire ball orb death fx 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 37.5,
+                    "y": 37.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3175,12 +3212,48 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Orb attack/fire ball orb death fx 3.png",
+                  "image": "assets/Orb attack/fire ball orb death fx 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
+                    "x": 37.5,
+                    "y": 37.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 72
+                      },
+                      {
+                        "x": 0,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "death fx",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 37.5,
+                    "y": 37.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3231,16 +3304,16 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.1,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 1.png",
+                  "image": "assets/Pillar of light/pillar light 1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3271,12 +3344,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 2.png",
+                  "image": "assets/Pillar of light/pillar light 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3307,12 +3380,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 3.png",
+                  "image": "assets/Pillar of light/pillar light 3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3343,12 +3416,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 4.png",
+                  "image": "assets/Pillar of light/pillar light 4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3379,12 +3452,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 5.png",
+                  "image": "assets/Pillar of light/pillar light 5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3415,12 +3488,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 6.png",
+                  "image": "assets/Pillar of light/pillar light 6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3451,12 +3524,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 7.png",
+                  "image": "assets/Pillar of light/pillar light 7.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3487,12 +3560,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 8.png",
+                  "image": "assets/Pillar of light/pillar light 8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3523,12 +3596,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Pillar of light/pillar light 878.png",
+                  "image": "assets/Pillar of light/pillar light 878.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 27.5,
+                    "y": 61.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3574,21 +3647,22 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "assets/portal/portal_1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "portal/portal_1.png",
+                  "image": "assets/portal/portal_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 26,
+                    "y": 46
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3619,12 +3693,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "portal/portal_2.png",
+                  "image": "assets/portal/portal_2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 26,
+                    "y": 46
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3655,12 +3729,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "portal/portal_3.png",
+                  "image": "assets/portal/portal_3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 26,
+                    "y": 46
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3691,12 +3765,48 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "portal/portal_4.png",
+                  "image": "assets/portal/portal_4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
+                    "x": 26,
+                    "y": 46
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 86
+                      },
+                      {
+                        "x": 6,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/portal/portal_1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 26,
+                    "y": 46
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3732,15 +3842,88 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite2",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "bold": false,
+      "italic": false,
+      "name": "Vitória",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "animations": []
+      "string": "Você ganhou a batalha!",
+      "font": "assets/Kenney Future Narrow.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Você ganhou a batalha!",
+        "font": "assets/Kenney Future Narrow.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "perdeu",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Você perdeu a batalha!",
+      "font": "assets/Kenney Future Narrow.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Você perdeu a batalha!",
+        "font": "assets/Kenney Future Narrow.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3876,7 +4059,10 @@
         "objectName": "architect"
       },
       {
-        "objectName": "NewSprite2"
+        "objectName": "Vitória"
+      },
+      {
+        "objectName": "perdeu"
       }
     ]
   },
@@ -3892,6 +4078,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3910,7 +4097,7 @@
               },
               "parameters": [
                 "",
-                "550332__wax_vibe__cyberpunk-bass.wav",
+                "assets/550332__wax_vibe__cyberpunk-bass.wav",
                 "yes",
                 "40",
                 ""
@@ -4058,6 +4245,32 @@
                 "Resizable",
                 "69",
                 "67"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "batalha",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Vitória"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "perdeu"
               ]
             }
           ],
@@ -4536,7 +4749,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4757,7 +4969,7 @@
                   },
                   "parameters": [
                     "",
-                    "385046__mortisblack__damage.ogg",
+                    "assets/385046__mortisblack__damage.ogg",
                     "",
                     "50",
                     ""
@@ -4770,8 +4982,8 @@
                   "parameters": [
                     "",
                     "explosao",
-                    "Enemy_Here.PointX(\"Center\")",
-                    "Enemy_Here.PointY(\"Center\")",
+                    "Enemy_Here.CenterX()",
+                    "Enemy_Here.CenterY()",
                     ""
                   ]
                 },
@@ -4889,6 +5101,166 @@
                       },
                       "parameters": [
                         "fell_bot",
+                        "Health",
+                        "15",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "origem",
+                        "=",
+                        "\"static_phantom\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "staticPhantom",
+                        "Health",
+                        "15",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "origem",
+                        "=",
+                        "\"the_glitch_king\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "glitch_king",
+                        "Health",
+                        "15",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "origem",
+                        "=",
+                        "\"cyrog\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "cyrog",
+                        "Health",
+                        "15",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "origem",
+                        "=",
+                        "\"arquiteto\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "architect",
                         "Health",
                         "15",
                         "",
@@ -5131,7 +5503,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "acoes inimigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5560,32 +5931,9 @@
                       },
                       "parameters": [
                         "",
-                        "385046__mortisblack__damage.ogg",
+                        "assets/385046__mortisblack__damage.ogg",
                         "",
                         "50",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Health::Health::Hit"
-                      },
-                      "parameters": [
-                        "echo_the_hero",
-                        "Health",
-                        "(nivel_de_ameaca/100) * 50",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "turn",
-                        "True",
                         ""
                       ]
                     }
@@ -5626,8 +5974,8 @@
                           "parameters": [
                             "",
                             "explosao",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5678,8 +6026,8 @@
                           "parameters": [
                             "",
                             "explosao",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5730,8 +6078,8 @@
                           "parameters": [
                             "",
                             "explosao",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5782,8 +6130,8 @@
                           "parameters": [
                             "",
                             "orb_attack",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5835,8 +6183,8 @@
                           "parameters": [
                             "",
                             "ataque_roxo",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5917,8 +6265,8 @@
                           "parameters": [
                             "",
                             "light_attack",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -5998,8 +6346,8 @@
                           "parameters": [
                             "",
                             "portal_attack",
-                            "Enemy_Here.PointX(\"Center\")",
-                            "Enemy_Here.PointY(\"Center\")",
+                            "echo_the_hero.CenterX()",
+                            "echo_the_hero.CenterY()",
                             ""
                           ]
                         },
@@ -6366,17 +6714,6 @@
                         "assets/music/heal-up-39285.mp3",
                         "",
                         "40",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Health::Health::Heal"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "",
-                        "3",
                         ""
                       ]
                     }
@@ -6774,71 +7111,480 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "morte",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "Health::Health::IsDead"
-          },
-          "parameters": [
-            "echo_the_hero",
-            "Health",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "769889__engie201__cyberpunk-style-death-sound.wav",
-            "",
-            "30",
-            ""
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "echo_the_hero",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/death.aac2",
+                    "",
+                    "25",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Menu\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "perdeu",
+                    ""
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Menu\"",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "cyruk",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Distrito Sinapse\"",
+                ""
+              ]
+            }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "acabar essa parte"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
-          "type": {
-            "value": "Health::Health::IsDead"
-          },
-          "parameters": [
-            "cyruk",
-            "Health",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "fell_bot",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Cidadela\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "globorg",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Distrito Mycora\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "staticPhantom",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Distrito Mycora\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "glitch_king",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Distrito Sinapse\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "cyrog",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Cidadela\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "architect",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Vitória",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+                "",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Vitoria\"",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": []
+      "parameters": []
     }
   ],
   "layers": [

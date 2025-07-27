@@ -1856,6 +1856,435 @@
         "name": "Slash attack FX/3 new slash 4.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/music/479258__inavision__futuristic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/479258__inavision__futuristic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof GR 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof GR 1.png\",\"extension\":\".png\"}",
+        "name": "assets/poof GR 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof GR 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof GR 2.png\",\"extension\":\".png\"}",
+        "name": "assets/poof GR 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof GR 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof GR 3.png\",\"extension\":\".png\"}",
+        "name": "assets/poof GR 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof GR 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof GR 4.png\",\"extension\":\".png\"}",
+        "name": "assets/poof GR 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof GR 5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof GR 5.png\",\"extension\":\".png\"}",
+        "name": "assets/poof GR 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_poof GR 1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/poof GR 1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/splosion 1.png\",\"extension\":\".png\"}",
+        "name": "assets/splosion 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/splosion 4.png\",\"extension\":\".png\"}",
+        "name": "assets/splosion 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/splosion 3.png\",\"extension\":\".png\"}",
+        "name": "assets/splosion 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/splosion 2.png\",\"extension\":\".png\"}",
+        "name": "assets/splosion 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "splosion2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof OJ 1.png\",\"extension\":\".png\"}",
+        "name": "assets/poof OJ 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof OJ 2.png\",\"extension\":\".png\"}",
+        "name": "assets/poof OJ 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof OJ 3.png\",\"extension\":\".png\"}",
+        "name": "assets/poof OJ 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof OJ 4.png\",\"extension\":\".png\"}",
+        "name": "assets/poof OJ 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "poof OJ2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof PU 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof PU 1.png\",\"extension\":\".png\"}",
+        "name": "assets/poof PU 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof PU 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof PU 2.png\",\"extension\":\".png\"}",
+        "name": "assets/poof PU 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof PU 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof PU 3.png\",\"extension\":\".png\"}",
+        "name": "assets/poof PU 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof PU 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof PU 4.png\",\"extension\":\".png\"}",
+        "name": "assets/poof PU 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof PU 5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/poof PU 5.png\",\"extension\":\".png\"}",
+        "name": "assets/poof PU 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_poof PU 1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/poof PU 1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Orb attack/fire ball orb death fx 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Orb attack/fire ball orb death fx 1.png\",\"extension\":\".png\"}",
+        "name": "assets/Orb attack/fire ball orb death fx 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Orb attack/fire ball orb death fx 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Orb attack/fire ball orb death fx 2.png\",\"extension\":\".png\"}",
+        "name": "assets/Orb attack/fire ball orb death fx 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Orb attack/fire ball orb death fx 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Orb attack/fire ball orb death fx 3.png\",\"extension\":\".png\"}",
+        "name": "assets/Orb attack/fire ball orb death fx 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death fx.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death fx",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pillar of light/pillar light 878.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Pillar of light/pillar light 878.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/portal/portal_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal/portal_1.png\",\"extension\":\".png\"}",
+        "name": "assets/portal/portal_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/portal/portal_2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal/portal_2.png\",\"extension\":\".png\"}",
+        "name": "assets/portal/portal_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/portal/portal_3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal/portal_3.png\",\"extension\":\".png\"}",
+        "name": "assets/portal/portal_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/portal/portal_4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal/portal_4.png\",\"extension\":\".png\"}",
+        "name": "assets/portal/portal_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_portal_portal_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/portal/portal_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/385046__mortisblack__damage.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/385046__mortisblack__damage.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/550332__wax_vibe__cyberpunk-bass.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/550332__wax_vibe__cyberpunk-bass.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/479258__inavision__futuristic.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/479258__inavision__futuristic.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Audio/8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/1up 10.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/de3a55a1dd3cc89f79e916b4ecc0c6344a32fdb6f6731d25b2f95836844e83b5_1up 10.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Lose 7.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "9a1751ebb6f3ca1f40a2a3b3dc2f7e8b3bc0572267d18086ce9adee864e3b104_Lose 7.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Lose/9a1751ebb6f3ca1f40a2a3b3dc2f7e8b3bc0572267d18086ce9adee864e3b104_Lose 7.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/death.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/death.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_death.aac2.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 8\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0,\\\"sustainPunch\\\":0,\\\"decay\\\":0.75,\\\"tremoloDepth\\\":78,\\\"tremoloFrequency\\\":8,\\\"frequency\\\":8100,\\\"frequencySweep\\\":-8400,\\\"frequencyDeltaSweep\\\":3200,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":4,\\\"harmonicsFalloff\\\":0.56,\\\"waveform\\\":\\\"sawtooth\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":250,\\\"vibratoFrequency\\\":766,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":2400,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":9100,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"assets/death.aac\"}}",
+        "name": "assets/death.aac2",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Future Narrow.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Kenney Future Narrow.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2332,6 +2761,11 @@
       "name": "origem",
       "type": "string",
       "value": "hub_central"
+    },
+    {
+      "name": "batalha",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -2362,6 +2796,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/vitoria"
     }
   ],
   "externalEvents": [

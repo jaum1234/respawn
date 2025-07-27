@@ -912,6 +912,37 @@
             "\"Left\""
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "batalha",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "echo_the_hero",
+                "=",
+                "echo_posicao_x",
+                "=",
+                "echo_posicao_y"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -1000,6 +1031,26 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_x",
+            "=",
+            "echo_the_hero.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_y",
+            "=",
+            "echo_the_hero.Y()"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1042,6 +1093,26 @@
             "origem",
             "=",
             "\"static_phantom\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_x",
+            "=",
+            "echo_the_hero.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "echo_posicao_y",
+            "=",
+            "echo_the_hero.Y()"
           ]
         },
         {
