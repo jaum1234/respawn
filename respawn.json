@@ -1710,7 +1710,7 @@
     },
     {
       "folded": true,
-      "name": "echo",
+      "name": "echo_att",
       "type": "structure",
       "children": [
         {
@@ -1732,7 +1732,7 @@
     },
     {
       "folded": true,
-      "name": "globorgue",
+      "name": "globorgue_att",
       "type": "structure",
       "children": [
         {
@@ -1759,7 +1759,7 @@
     },
     {
       "folded": true,
-      "name": "static_phantom",
+      "name": "static_phantom_att",
       "type": "structure",
       "children": [
         {
@@ -1786,7 +1786,7 @@
     },
     {
       "folded": true,
-      "name": "cyruk",
+      "name": "cyruk_att",
       "type": "structure",
       "children": [
         {
@@ -1813,7 +1813,7 @@
     },
     {
       "folded": true,
-      "name": "the_glitch_king",
+      "name": "the_glitch_king_att",
       "type": "structure",
       "children": [
         {
@@ -1840,7 +1840,7 @@
     },
     {
       "folded": true,
-      "name": "fell_bot",
+      "name": "fell_bot_att",
       "type": "structure",
       "children": [
         {
@@ -1867,7 +1867,7 @@
     },
     {
       "folded": true,
-      "name": "cyrog",
+      "name": "cyrog_att",
       "type": "structure",
       "children": [
         {
@@ -1894,7 +1894,7 @@
     },
     {
       "folded": true,
-      "name": "arquiteto",
+      "name": "arquiteto_att",
       "type": "structure",
       "children": [
         {

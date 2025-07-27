@@ -48,7 +48,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.ataque",
+            "echo_att.ataque",
             "+",
             "nivel_2.ataque"
           ]
@@ -58,7 +58,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.defesa",
+            "echo_att.defesa",
             "+",
             "nivel_2.defesa"
           ]
@@ -122,7 +122,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.ataque",
+            "echo_att.ataque",
             "+",
             "nivel_3.ataque"
           ]
@@ -132,7 +132,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.defesa",
+            "echo_att.defesa",
             "+",
             "nivel_3.defesa"
           ]
@@ -196,7 +196,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.ataque",
+            "echo_att.ataque",
             "+",
             "nivel_4.ataque"
           ]
@@ -206,7 +206,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.defesa",
+            "echo_att.defesa",
             "+",
             "nivel_4.defesa"
           ]
@@ -270,7 +270,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.ataque",
+            "echo_att.ataque",
             "+",
             "nivel_5.ataque"
           ]
@@ -280,7 +280,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "echo.defesa",
+            "echo_att.defesa",
             "+",
             "nivel_5.defesa"
           ]
