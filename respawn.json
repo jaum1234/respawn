@@ -1907,14 +1907,13 @@
           "value": 2
         },
         {
-          "name": "hp",
+          "name": "xp",
           "type": "number",
           "value": 1600
         }
       ]
     },
     {
-      "folded": true,
       "name": "nivel_5",
       "type": "structure",
       "children": [
@@ -1982,6 +1981,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/no_inicio_da_cena"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/upando_nivel"
     }
   ],
   "eventsFunctionsExtensions": [
