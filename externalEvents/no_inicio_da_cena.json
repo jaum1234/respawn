@@ -43,6 +43,18 @@
             "=",
             "0"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/music/cyberpunk-street.mp3",
+            "yes",
+            "40",
+            ""
+          ]
         }
       ]
     }

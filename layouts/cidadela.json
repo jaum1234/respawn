@@ -1660,10 +1660,13 @@
         "objectName": "acessorios"
       },
       {
-        "objectName": "boss"
+        "objectName": ""
       },
       {
         "objectName": "ir_para_grande_salao"
+      },
+      {
+        "objectName": "boss2"
       }
     ]
   },
@@ -1713,18 +1716,6 @@
             "Animation",
             "=",
             "\"Up\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayMusic"
-          },
-          "parameters": [
-            "",
-            "assets/music/cyberpunk-street.mp3",
-            "yes",
-            "50",
-            ""
           ]
         }
       ]
@@ -1902,7 +1893,7 @@
           },
           "parameters": [
             "echo_the_hero",
-            "boss",
+            "boss2",
             "",
             "",
             ""

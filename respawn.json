@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 238,
+    "build": 237,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1099,7 +1099,7 @@
       {
         "file": "assets/image/boss_grid_demon_cidadela.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/image/boss_grid_demon_cidadela.png\",\"extension\":\".png\"}",
         "name": "assets/image/boss_grid_demon_cidadela.png",
         "smoothed": false,
         "userAdded": false
@@ -1306,6 +1306,556 @@
         "name": "barra_ameaca",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/battle-background.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/battle-background.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1 Icons/5/Skillicon5_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/1 Icons/5/Skillicon5_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/heal-up-39285.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/heal-up-39285.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/086161_pickups_shield_beltwav-81574.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/086161_pickups_shield_beltwav-81574.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/cyruk_hai.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/cyruk_hai.png\",\"extension\":\".png\"}",
+        "name": "assets/image/cyruk_hai.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/fell_bot.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/fell_bot.png\",\"extension\":\".png\"}",
+        "name": "assets/image/fell_bot.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/globorg.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/globorg.png\",\"extension\":\".png\"}",
+        "name": "assets/image/globorg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof GR 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof GR 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof GR 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof GR 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof GR 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof GR 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof GR 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof GR 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof GR 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof GR 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof OJ 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"poof OJ 1.png\",\"extension\":\".png\"}",
+        "name": "poof OJ 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof OJ 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"poof OJ 2.png\",\"extension\":\".png\"}",
+        "name": "poof OJ 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof OJ 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"poof OJ 3.png\",\"extension\":\".png\"}",
+        "name": "poof OJ 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof OJ 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"poof OJ 4.png\",\"extension\":\".png\"}",
+        "name": "poof OJ 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof OJ 5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"poof OJ 5.png\",\"extension\":\".png\"}",
+        "name": "poof OJ 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof PU 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof PU 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof PU 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof PU 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof PU 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof PU 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof PU 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof PU 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "poof PU 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "poof PU 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "splosion 1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"splosion 1.png\",\"extension\":\".png\"}",
+        "name": "splosion 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "splosion 2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"splosion 2.png\",\"extension\":\".png\"}",
+        "name": "splosion 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "splosion 3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"splosion 3.png\",\"extension\":\".png\"}",
+        "name": "splosion 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "splosion 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"splosion 4.png\",\"extension\":\".png\"}",
+        "name": "splosion 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/FX Bundle/Splosion/splosion 4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"../../../Downloads/FX Bundle/Splosion/splosion 4.png\",\"extension\":\".png\"}",
+        "name": "../../../Downloads/FX Bundle/Splosion/splosion 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/splosion 1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "splosion 1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/poof OJ 1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "poof OJ 1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_static_phantom_mycora.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/boss_static_phantom_mycora.png\",\"extension\":\".png\"}",
+        "name": "assets/image/boss_static_phantom_mycora.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_the_glitch_ling_sinapse.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/boss_the_glitch_ling_sinapse.png\",\"extension\":\".png\"}",
+        "name": "assets/image/boss_the_glitch_ling_sinapse.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/boss_the_architect.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/boss_the_architect.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "769889__engie201__cyberpunk-style-death-sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "769889__engie201__cyberpunk-style-death-sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb fx 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb fx 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb fx 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb fx 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb fx 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb fx 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb death fx 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb death fx 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb death fx 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb death fx 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Orb attack/fire ball orb death fx 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orb attack/fire ball orb death fx 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pillar of light/pillar light 878.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pillar of light/pillar light 878.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal/portal_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal/portal_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal/portal_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal/portal_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal/portal_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal/portal_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal/portal_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal/portal_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/0 new slash 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/0 new slash 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/0 new slash 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/0 new slash 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/0 new slash 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/0 new slash 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/0 new slash 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/0 new slash 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/1 new slash 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/1 new slash 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/1 new slash 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/1 new slash 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/1 new slash 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/1 new slash 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/1 new slash 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/1 new slash 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/2 new slash 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/2 new slash 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/2 new slash 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/2 new slash 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/2 new slash 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/2 new slash 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/2 new slash 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/2 new slash 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/3 new slash 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/3 new slash 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/3 new slash 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/3 new slash 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/3 new slash 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/3 new slash 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash attack FX/3 new slash 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash attack FX/3 new slash 4.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1357,9 +1907,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 50,
+          "Health": 100,
           "CurrentHealth": 0,
-          "MaxHealth": 50,
+          "MaxHealth": 100,
           "DamageCooldown": 0,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -1864,6 +2414,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
     }
   ],
   "externalLayouts": []

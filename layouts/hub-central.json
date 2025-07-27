@@ -1255,6 +1255,18 @@
           "parameters": [
             "ir_para_distrito_mycora"
           ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "assets/music/cyberpunk-street.mp3",
+            "yes",
+            "40",
+            ""
+          ]
         }
       ]
     },

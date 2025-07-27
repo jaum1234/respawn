@@ -11,20 +11,40 @@
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6040838749988879,
+    "zoomFactor": 0.5843784410740941,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
     {
       "name": "enemy_action",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "shield_player",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "shield_enemy",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "veneno",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "especial_arquiteto",
       "type": "number",
       "value": 0
     }
@@ -34,14 +54,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 408,
+      "height": 356,
       "keepRatio": true,
       "layer": "",
       "name": "NewSprite",
       "persistentUuid": "ca4bac01-7631-4aa2-aac7-ac7dc0491d0f",
-      "width": 223,
-      "x": 121,
-      "y": 374,
+      "width": 205,
+      "x": 131,
+      "y": 295,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -57,9 +77,9 @@
       "name": "Enemy_Here",
       "persistentUuid": "8a7e2c27-768e-4f87-9cd1-0ba1a03846a1",
       "width": 83,
-      "x": 922,
-      "y": 234,
-      "zOrder": 2,
+      "x": 890,
+      "y": 274,
+      "zOrder": 700,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -73,8 +93,8 @@
       "name": "botao_ataque",
       "persistentUuid": "b8c438f3-1f26-42f5-aff4-db76e72eb691",
       "width": 363,
-      "x": 885,
-      "y": 490,
+      "x": 896,
+      "y": 480,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -89,8 +109,8 @@
       "name": "botao_defesa",
       "persistentUuid": "aa810421-2dca-42b4-ba51-59bc4b35667c",
       "width": 363,
-      "x": 885,
-      "y": 560,
+      "x": 896,
+      "y": 552,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -105,8 +125,8 @@
       "name": "botao_cura",
       "persistentUuid": "8db3ab2e-d817-4f84-b51c-ffa40800ab4c",
       "width": 363,
-      "x": 885,
-      "y": 630,
+      "x": 896,
+      "y": 623,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -122,8 +142,8 @@
       "name": "icone_cura",
       "persistentUuid": "6acd93de-6f99-4f9e-b3f4-36dfb8e682a9",
       "width": 60,
-      "x": 902,
-      "y": 564,
+      "x": 906,
+      "y": 628,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -139,8 +159,8 @@
       "name": "icone_defesa",
       "persistentUuid": "77e57205-5a77-45b9-9bfb-c04b597597e6",
       "width": 56,
-      "x": 908,
-      "y": 635,
+      "x": 909,
+      "y": 556,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -156,8 +176,8 @@
       "name": "icone_ataque",
       "persistentUuid": "efa16c84-3ba8-4ece-8d99-0d00c1ce1fa5",
       "width": 58,
-      "x": 898,
-      "y": 492,
+      "x": 909,
+      "y": 482,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -167,32 +187,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 34,
+      "height": 51,
       "keepRatio": true,
       "layer": "",
       "name": "Atacar",
       "persistentUuid": "16d21596-1ce5-409f-ac76-19be6ed9b85e",
-      "width": 189,
-      "x": 1051,
-      "y": 497,
+      "width": 122,
+      "x": 1126,
+      "y": 489,
       "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 727,
-      "keepRatio": true,
-      "layer": "background",
-      "name": "NewSprite3",
-      "persistentUuid": "35307788-d35a-4067-ba77-9b622e60276c",
-      "width": 1282,
-      "x": -2,
-      "y": 0,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -206,8 +209,8 @@
       "name": "Curar",
       "persistentUuid": "d4d54e2d-5a90-4b1d-a894-754146413d94",
       "width": 0,
-      "x": 1093,
-      "y": 667,
+      "x": 1144,
+      "y": 657,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -222,8 +225,8 @@
       "name": "Defender",
       "persistentUuid": "88675fd1-95f1-4228-8e6e-d5adb4646193",
       "width": 0,
-      "x": 1056,
-      "y": 573,
+      "x": 1079,
+      "y": 556,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -238,25 +241,9 @@
       "name": "vida_echo",
       "persistentUuid": "4912ac5d-537a-4ed3-b984-d461d8f59581",
       "width": 150,
-      "x": 168,
-      "y": 309,
+      "x": 160,
+      "y": 235,
       "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 108.47457627118644,
-      "height": 23.5,
-      "layer": "",
-      "name": "vida_inimigo",
-      "persistentUuid": "5f7ba0e9-2a6a-4b3b-aa6d-ae5b8ce81b4e",
-      "width": 150,
-      "x": 849,
-      "y": 20,
-      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -271,8 +258,8 @@
       "name": "shield_icon",
       "persistentUuid": "2d42aad5-1eac-4da7-b9f9-a0354e26f136",
       "width": 85,
-      "x": 55,
-      "y": 333,
+      "x": 50,
+      "y": 264,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -299,15 +286,48 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 446,
+      "height": 722,
+      "keepRatio": true,
+      "layer": "background",
+      "name": "background",
+      "persistentUuid": "f3002cba-df5d-4b85-a6b2-db52f6670565",
+      "width": 1287,
+      "x": -2,
+      "y": 0,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "background",
+      "name": "echo_the_hero",
+      "persistentUuid": "56376aa5-3bd1-4303-9459-a72d4f0b95c0",
+      "width": 0,
+      "x": 599,
+      "y": -175,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 73,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite3",
-      "persistentUuid": "bcc0c8f7-ea70-4130-8a84-058bb5b0cbc7",
-      "width": 451,
-      "x": 81,
-      "y": 7,
-      "zOrder": 4,
+      "name": "Attack_Here",
+      "persistentUuid": "63c65cf3-4f83-47a3-a2f2-00511e86cbea",
+      "width": 73,
+      "x": 232,
+      "y": 490,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -322,7 +342,16 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        }
+      ],
       "animations": [
         {
           "name": "assets\\image\\up2.png",
@@ -426,186 +455,6 @@
                       {
                         "x": 2,
                         "y": 13
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Tonk_combat_sprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "AllowOverHealing": false,
-          "IsHealthJustDamaged": false,
-          "DamageToBeApplied": 0,
-          "HitAtLeastOnce": false,
-          "ChanceToDodge": 0,
-          "IsJustDodged": false,
-          "HealToBeApplied": 0,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 2.0247e-320,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ShieldDamageTaken": 2.0247e-320,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "proto2_by_themfreak-d87wpdl-1465858786",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "proto2_by_themfreak-d87wpdl-1465858786.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 245,
-                    "y": 250
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 5
-                      },
-                      {
-                        "x": 490,
-                        "y": 5
-                      },
-                      {
-                        "x": 490,
-                        "y": 495
-                      },
-                      {
-                        "x": 0,
-                        "y": 495
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Rank_combat_sprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "AllowOverHealing": false,
-          "IsHealthJustDamaged": false,
-          "DamageToBeApplied": 0,
-          "HitAtLeastOnce": false,
-          "ChanceToDodge": 0,
-          "IsJustDodged": false,
-          "HealToBeApplied": 0,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 2.0247e-320,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ShieldDamageTaken": 2.0247e-320,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "personaje-robot-pixel-art_642384-2-3158313859",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "personaje-robot-pixel-art_642384-2-3158313859.jpg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 626,
-                        "y": 0
-                      },
-                      {
-                        "x": 626,
-                        "y": 626
-                      },
-                      {
-                        "x": 0,
-                        "y": 626
                       }
                     ]
                   ]
@@ -1073,66 +922,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/unnamed.jpg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1024,
-                        "y": 0
-                      },
-                      {
-                        "x": 1024,
-                        "y": 1024
-                      },
-                      {
-                        "x": 0,
-                        "y": 1024
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -1273,14 +1062,14 @@
         "BarBottomPadding": 4,
         "EasingDuration": 0,
         "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "InitialValue": 8,
-        "MaxValue": 16
+        "ShowLabel": true,
+        "InitialValue": 100,
+        "MaxValue": 100
       }
     },
     {
       "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
-      "name": "vida_inimigo",
+      "name": "vida_fell_bot",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variant": "Green Dot Bar",
       "variables": [],
@@ -1293,9 +1082,9 @@
         "BarBottomPadding": 4,
         "EasingDuration": 0,
         "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "InitialValue": 8,
-        "MaxValue": 16
+        "ShowLabel": true,
+        "InitialValue": 100,
+        "MaxValue": 100
       }
     },
     {
@@ -1417,6 +1206,2541 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "background",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/battle-background.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1024,
+                        "y": 0
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1024
+                      },
+                      {
+                        "x": 0,
+                        "y": 1024
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "turn_indicator",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/1 Icons/5/Skillicon5_02.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 8
+                      },
+                      {
+                        "x": 25,
+                        "y": 8
+                      },
+                      {
+                        "x": 25,
+                        "y": 24
+                      },
+                      {
+                        "x": 7,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "cyruk",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 80,
+          "CurrentHealth": 0,
+          "MaxHealth": 80,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/cyruk_hai",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/cyruk_hai.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 512,
+                    "y": 512
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 58,
+                        "y": 58
+                      },
+                      {
+                        "x": 903,
+                        "y": 58
+                      },
+                      {
+                        "x": 903,
+                        "y": 966
+                      },
+                      {
+                        "x": 58,
+                        "y": 966
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "fell_bot",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 100,
+          "CurrentHealth": 0,
+          "MaxHealth": 100,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/fell_bot",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/fell_bot.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 512,
+                    "y": 512
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 58,
+                        "y": 101
+                      },
+                      {
+                        "x": 985,
+                        "y": 101
+                      },
+                      {
+                        "x": 985,
+                        "y": 928
+                      },
+                      {
+                        "x": 58,
+                        "y": 928
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "globorg",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 60,
+          "CurrentHealth": 0,
+          "MaxHealth": 60,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/globorg",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/globorg.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 512,
+                    "y": 512
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 64,
+                        "y": 41
+                      },
+                      {
+                        "x": 874,
+                        "y": 41
+                      },
+                      {
+                        "x": 874,
+                        "y": 984
+                      },
+                      {
+                        "x": 64,
+                        "y": 984
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ataque_verde",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof GR 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof GR 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof GR 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof GR 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof GR 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ataque_laranja",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "poof OJ 1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof OJ 1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ataque_roxo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof PU 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof PU 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof PU 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof PU 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "poof PU 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125.5,
+                    "y": 125.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 56,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 51
+                      },
+                      {
+                        "x": 170,
+                        "y": 166
+                      },
+                      {
+                        "x": 56,
+                        "y": 166
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "explosao",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "splosion 1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splosion 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splosion 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splosion 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splosion 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "../../../Downloads/FX Bundle/Splosion/splosion 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splosion 1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40.5,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 25
+                      },
+                      {
+                        "x": 51,
+                        "y": 53
+                      },
+                      {
+                        "x": 26,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Attack_Here",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 14,
+                        "y": 2
+                      },
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 2,
+                        "y": 13
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_globorg",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 60,
+        "MaxValue": 60
+      }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_cyruk",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 80,
+        "MaxValue": 80
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "staticPhantom",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 110,
+          "CurrentHealth": 0,
+          "MaxHealth": 110,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/boss_static_phantom_mycora",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/boss_static_phantom_mycora.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 28
+                      },
+                      {
+                        "x": 805,
+                        "y": 28
+                      },
+                      {
+                        "x": 805,
+                        "y": 949
+                      },
+                      {
+                        "x": 25,
+                        "y": 949
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "glitch_king",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 120,
+          "CurrentHealth": 0,
+          "MaxHealth": 120,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/boss_the_glitch_ling_sinapse",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/boss_the_glitch_ling_sinapse.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 91,
+                        "y": 32
+                      },
+                      {
+                        "x": 944,
+                        "y": 32
+                      },
+                      {
+                        "x": 944,
+                        "y": 977
+                      },
+                      {
+                        "x": 91,
+                        "y": 977
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "cyrog",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 130,
+          "CurrentHealth": 0,
+          "MaxHealth": 130,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "assets/image/boss_grid_demon_cidadela",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/boss_grid_demon_cidadela.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 47,
+                        "y": 32
+                      },
+                      {
+                        "x": 990,
+                        "y": 32
+                      },
+                      {
+                        "x": 990,
+                        "y": 968
+                      },
+                      {
+                        "x": 47,
+                        "y": 968
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "architect",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 150,
+          "CurrentHealth": 0,
+          "MaxHealth": 150,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/boss_the_architect.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 69
+                      },
+                      {
+                        "x": 973,
+                        "y": 69
+                      },
+                      {
+                        "x": 973,
+                        "y": 1357
+                      },
+                      {
+                        "x": 40,
+                        "y": 1357
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_phantom",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 110,
+        "MaxValue": 110
+      }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_king",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 120,
+        "MaxValue": 120
+      }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_cyrog",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 130,
+        "MaxValue": 130
+      }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "vida_architect",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "InitialValue": 150,
+        "MaxValue": 150
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "orb_attack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "death fx",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.13,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orb attack/fire ball orb death fx 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 72
+                      },
+                      {
+                        "x": 0,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orb attack/fire ball orb death fx 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 72
+                      },
+                      {
+                        "x": 0,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orb attack/fire ball orb death fx 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 1
+                      },
+                      {
+                        "x": 73,
+                        "y": 72
+                      },
+                      {
+                        "x": 0,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "light_attack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pillar of light/pillar light 878.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 123
+                      },
+                      {
+                        "x": 0,
+                        "y": 123
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "portal_attack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal/portal_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 86
+                      },
+                      {
+                        "x": 6,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal/portal_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 86
+                      },
+                      {
+                        "x": 6,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal/portal_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 86
+                      },
+                      {
+                        "x": 6,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal/portal_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 6
+                      },
+                      {
+                        "x": 47,
+                        "y": 86
+                      },
+                      {
+                        "x": 6,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -1468,28 +3792,91 @@
         "objectName": "NewSprite"
       },
       {
+        "objectName": "ataque_verde"
+      },
+      {
+        "objectName": "explosao"
+      },
+      {
         "objectName": "Enemy_Here"
       },
       {
-        "objectName": "Tonk_combat_sprite"
-      },
-      {
-        "objectName": "Rank_combat_sprite"
-      },
-      {
-        "objectName": "NewSprite3"
+        "objectName": "Attack_Here"
       },
       {
         "objectName": "vida_echo"
       },
       {
-        "objectName": "vida_inimigo"
+        "objectName": "vida_fell_bot"
+      },
+      {
+        "objectName": "vida_globorg"
+      },
+      {
+        "objectName": "vida_cyruk"
+      },
+      {
+        "objectName": "vida_phantom"
+      },
+      {
+        "objectName": "vida_king"
+      },
+      {
+        "objectName": "vida_cyrog"
+      },
+      {
+        "objectName": "vida_architect"
       },
       {
         "objectName": "shield_icon"
       },
       {
+        "objectName": "turn_indicator"
+      },
+      {
         "objectName": "shield_icon2"
+      },
+      {
+        "objectName": "background"
+      },
+      {
+        "objectName": "cyruk"
+      },
+      {
+        "objectName": "fell_bot"
+      },
+      {
+        "objectName": "globorg"
+      },
+      {
+        "objectName": "ataque_laranja"
+      },
+      {
+        "objectName": "ataque_roxo"
+      },
+      {
+        "objectName": "staticPhantom"
+      },
+      {
+        "objectName": "glitch_king"
+      },
+      {
+        "objectName": "orb_attack"
+      },
+      {
+        "objectName": "light_attack"
+      },
+      {
+        "objectName": "portal_attack"
+      },
+      {
+        "objectName": "cyrog"
+      },
+      {
+        "objectName": "architect"
+      },
+      {
+        "objectName": "NewSprite2"
       }
     ]
   },
@@ -1517,6 +3904,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "550332__wax_vibe__cyberpunk-bass.wav",
+                "yes",
+                "40",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "OpacityCapability::OpacityBehavior::SetValue"
@@ -1618,17 +4017,6 @@
             },
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "vida_echo",
-                "=",
-                "echo_the_hero.Health::Health()",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -1639,14 +4027,10 @@
             },
             {
               "type": {
-                "value": "PlayMusic"
+                "value": "Cache"
               },
               "parameters": [
-                "",
-                "550332__wax_vibe__cyberpunk-bass.wav",
-                "yes",
-                "40",
-                ""
+                "Attack_Here"
               ]
             },
             {
@@ -1664,6 +4048,477 @@
               "parameters": [
                 "shield_icon2"
               ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "turn_indicator",
+                "Resizable",
+                "69",
+                "67"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"mycora\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_globorg",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "globorg",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "globorg",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"sinapse\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_cyruk",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "cyruk",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "cyruk",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"cidadela\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_fell_bot",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "fell_bot",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "fell_bot",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"static_phantom\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_phantom",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "staticPhantom",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "staticPhantom",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"the_glitch_king\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_king",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "glitch_king",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "glitch_king",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"cyrog\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_cyrog",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "cyrog",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "cyrog",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"arquiteto\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "vida_architect",
+                    "849",
+                    "20",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "architect",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "architect",
+                    "Resizable",
+                    "429",
+                    "407"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_echo",
+                "=",
+                "echo_the_hero.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_globorg",
+                "=",
+                "globorg.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_cyruk",
+                "=",
+                "cyruk.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_fell_bot",
+                "=",
+                "fell_bot.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_phantom",
+                "=",
+                "staticPhantom.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_king",
+                "=",
+                "glitch_king.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_cyrog",
+                "=",
+                "cyrog.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "vida_architect",
+                "=",
+                "architect.Health::Health()",
+                ""
+              ]
             }
           ]
         }
@@ -1676,114 +4531,12 @@
       "colorR": 74,
       "creationTime": 0,
       "folded": true,
-      "name": "inimigos",
+      "name": "ações player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Enemy_Id",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Rank_combat_sprite",
-                "Enemy_Here.PointX(\"Center\")",
-                "Enemy_Here.PointY(\"Center\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetSize"
-              },
-              "parameters": [
-                "Rank_combat_sprite",
-                "Resizable",
-                "429",
-                "407"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Enemy_Id",
-                "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Tonk_combat_sprite",
-                "Enemy_Here.PointX(\"Center\")",
-                "Enemy_Here.PointY(\"Center\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetSize"
-              },
-              "parameters": [
-                "Tonk_combat_sprite",
-                "Resizable",
-                "429",
-                "407"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "vida_inimigo",
-                "=",
-                "Tonk_combat_sprite.Health::Health()",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "ações",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1805,10 +4558,185 @@
               "parameters": [
                 "shield_icon"
               ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "turn_indicator",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "turn_indicator",
+                "236",
+                "682",
+                ""
+              ]
             }
           ],
           "events": [
             {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "origem",
+                    "=",
+                    "\"arquiteto\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "especial_arquiteto",
+                    "=",
+                    "RandomInRange(1,3)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "especial_arquiteto",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "botao_defesa"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "icone_defesa"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Defender"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "especial_arquiteto",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "botao_ataque"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "icone_ataque"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Atacar"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "especial_arquiteto",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "botao_cura"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "icone_cura"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Curar"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1825,16 +4753,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "turn",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
@@ -1844,6 +4762,29 @@
                     "50",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "explosao",
+                    "Enemy_Here.PointX(\"Center\")",
+                    "Enemy_Here.PointY(\"Center\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "explosao",
+                    "Resizable",
+                    "378",
+                    "297"
+                  ]
                 }
               ],
               "events": [
@@ -1852,12 +4793,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                        "value": "StringVariable"
                       },
                       "parameters": [
-                        "Enemy_Id",
+                        "origem",
                         "=",
-                        "1"
+                        "\"mycora\""
                       ]
                     }
                   ],
@@ -1867,11 +4808,21 @@
                         "value": "Health::Health::Hit"
                       },
                       "parameters": [
-                        "Rank_combat_sprite",
+                        "globorg",
                         "Health",
-                        "10",
+                        "20",
                         "",
                         "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
                         ""
                       ]
                     }
@@ -1882,12 +4833,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                        "value": "StringVariable"
                       },
                       "parameters": [
-                        "Enemy_Id",
+                        "origem",
                         "=",
-                        "2"
+                        "\"sinapse\""
                       ]
                     }
                   ],
@@ -1897,11 +4848,61 @@
                         "value": "Health::Health::Hit"
                       },
                       "parameters": [
-                        "Tonk_combat_sprite",
+                        "cyruk",
                         "Health",
                         "10",
                         "",
                         "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "origem",
+                        "=",
+                        "\"cidadela\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "fell_bot",
+                        "Health",
+                        "15",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "turn",
+                        "False",
                         ""
                       ]
                     }
@@ -1924,6 +4925,30 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/music/heal-up-39285.mp3",
+                    "",
+                    "40",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::FlashColor::Flash"
+                  },
+                  "parameters": [
+                    "NewSprite",
+                    "FlashColor",
+                    "0.5",
+                    "\"126;211;33\"",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Health::Health::Heal"
@@ -1964,6 +4989,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/music/086161_pickups_shield_beltwav-81574.mp3",
+                    "",
+                    "40",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -1985,6 +5022,16 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "shield_player",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetBooleanVariable"
                   },
                   "parameters": [
@@ -2000,22 +5047,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                    "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Enemy_Id",
+                    "shield_player",
                     "=",
                     "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Health::Health::IsShieldActive"
-                  },
-                  "parameters": [
-                    "Rank_combat_sprite",
-                    "Health",
-                    ""
                   ]
                 }
               ],
@@ -2025,22 +5062,79 @@
                     "value": "Health::Health::SetShieldPointsOp"
                   },
                   "parameters": [
-                    "Rank_combat_sprite",
+                    "echo_the_hero",
                     "Health",
                     "=",
                     "0",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "shield_player",
+                    "=",
+                    "0"
                   ]
                 }
               ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "veneno",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "echo_the_hero",
+                    "Health",
+                    "15",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "veneno",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "acoes inimigos",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2063,9 +5157,356 @@
               "parameters": [
                 "shield_icon2"
               ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "turn_indicator",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "turn_indicator",
+                "913",
+                "460",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "botao_ataque",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "icone_ataque",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Atacar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "botao_defesa",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "icone_defesa",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Defender",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "botao_cura",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "icone_cura",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Curar",
+                ""
+              ]
             }
           ],
           "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "shield_enemy",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::SetShieldPointsOp"
+                  },
+                  "parameters": [
+                    "echo_the_hero",
+                    "Health",
+                    "=",
+                    "0",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "shield_enemy",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "cyruk",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "cyruk",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "fell_bot",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "fell_bot",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "globorg",
+                        "Health",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "globorg",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "glitch_king",
+                        "Health",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "glitch_king",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "staticPhantom",
+                        "Health",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "staticPhantom",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "cyrog",
+                        "Health",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "cyrog",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsShieldActive"
+                      },
+                      "parameters": [
+                        "architect",
+                        "Health",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetShieldPointsOp"
+                      },
+                      "parameters": [
+                        "architect",
+                        "Health",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2084,7 +5525,7 @@
                   "parameters": [
                     "enemy_action",
                     "=",
-                    "Random(3)"
+                    "RandomInRange(1, 3)"
                   ]
                 },
                 {
@@ -2114,19 +5555,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Health::Health::Hit"
-                      },
-                      "parameters": [
-                        "echo_the_hero",
-                        "Health",
-                        "7",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "PlaySound"
                       },
                       "parameters": [
@@ -2134,6 +5562,19 @@
                         "385046__mortisblack__damage.ogg",
                         "",
                         "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "echo_the_hero",
+                        "Health",
+                        "(nivel_de_ameaca/100) * 50",
+                        "",
+                        "",
                         ""
                       ]
                     },
@@ -2147,9 +5588,436 @@
                         ""
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"mycora\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "(nivel_de_ameaca/100) * 50",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "explosao",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"sinapse\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "(nivel_de_ameaca/100) * 50",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "explosao",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cidadela\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "(nivel_de_ameaca/100) * 50",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "explosao",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"static_phantom\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "10",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "orb_attack",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"the_glitch_king\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "15",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "ataque_roxo",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "RandomInRange(1,5)",
+                                "=",
+                                "3"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "veneno",
+                                "True",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cyrog\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "20",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "light_attack",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "RandomInRange(1,10)",
+                                "=",
+                                "3"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "turn",
+                                "False",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"arquiteto\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "echo_the_hero",
+                            "Health",
+                            "25",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "portal_attack",
+                            "Enemy_Here.PointX(\"Center\")",
+                            "Enemy_Here.PointY(\"Center\")",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2166,13 +6034,13 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Health::Health::ActivateShield"
+                        "value": "PlaySound"
                       },
                       "parameters": [
-                        "Enemies",
                         "",
-                        "4",
+                        "assets/music/086161_pickups_shield_beltwav-81574.mp3",
                         "",
+                        "40",
                         ""
                       ]
                     },
@@ -2187,17 +6055,293 @@
                     },
                     {
                       "type": {
-                        "value": "SetBooleanVariable"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "turn",
-                        "True",
-                        ""
+                        "shield_enemy",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"mycora\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "globorg",
+                            "Health",
+                            "5",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"sinapse\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "cyruk",
+                            "Health",
+                            "6",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cidadela\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "fell_bot",
+                            "Health",
+                            "7",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"static_phantom\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "staticPhantom",
+                            "Health",
+                            "10",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"the_glitch_king\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "glitch_king",
+                            "Health",
+                            "14",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cyrog\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "cyrog",
+                            "Health",
+                            "18",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"arquiteto\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::ActivateShield"
+                          },
+                          "parameters": [
+                            "architect",
+                            "Health",
+                            "20",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2214,6 +6358,18 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/heal-up-39285.mp3",
+                        "",
+                        "40",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Health::Health::Heal"
                       },
                       "parameters": [
@@ -2222,23 +6378,392 @@
                         "3",
                         ""
                       ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"mycora\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "globorg",
+                            "Health",
+                            "6",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "globorg",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
                     },
                     {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "turn",
-                        "True",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"sinapse\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "cyruk",
+                            "Health",
+                            "8",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "cyruk",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cidadela\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "fell_bot",
+                            "Health",
+                            "7",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "fell_bot",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"static_phantom\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "staticPhantom",
+                            "Health",
+                            "10",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "staticPhantom",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"the_glitch_king\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "glitch_king",
+                            "Health",
+                            "14",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "glitch_king",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"cyrog\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "cyrog",
+                            "Health",
+                            "18",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "cyrog",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "origem",
+                            "=",
+                            "\"arquiteto\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Heal"
+                          },
+                          "parameters": [
+                            "architect",
+                            "Health",
+                            "22",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::FlashColor::Flash"
+                          },
+                          "parameters": [
+                            "architect",
+                            "FlashColor",
+                            "0.5",
+                            "\"126;211;33\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "turn",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Health"
+                              },
+                              "parameters": [
+                                "architect",
+                                "Health",
+                                "<",
+                                "architect.Health::MaxHealth()",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Heal"
+                              },
+                              "parameters": [
+                                "architect",
+                                "Health",
+                                "44",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
                 }
               ]
             }
@@ -2246,6 +6771,73 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsDead"
+          },
+          "parameters": [
+            "echo_the_hero",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "769889__engie201__cyberpunk-style-death-sound.wav",
+            "",
+            "30",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Menu\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "acabar essa parte"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsDead"
+          },
+          "parameters": [
+            "cyruk",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": []
     }
   ],
   "layers": [
@@ -2259,7 +6851,7 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "background",
       "renderingType": "",
       "visibility": true,
