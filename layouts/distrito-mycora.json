@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.2530387740589939,
+    "zoomFactor": 0.6040838749988927,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -161,13 +161,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.2345679012345678,
-      "height": 40.74074074074073,
+      "depth": 0.6172839506172839,
+      "height": 20.370370370370367,
       "keepRatio": true,
       "layer": "Layer",
       "name": "barra_ameaca",
       "persistentUuid": "41f4a8ff-1ad2-4a39-a677-55fbf3b196db",
-      "width": 200,
+      "width": 100,
       "x": 42,
       "y": 20,
       "zOrder": 10,
@@ -718,6 +718,70 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 26,
+      "layer": "Layer",
+      "name": "BlueDotBar",
+      "persistentUuid": "8ea4440a-d273-496c-b996-22ccced77f85",
+      "width": 100,
+      "x": 42,
+      "y": 50,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "nivel_atual_label",
+      "persistentUuid": "9232885b-b60f-4158-ae24-bd902aa0f68a",
+      "width": 0,
+      "x": 42,
+      "y": 87,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "nivel_atual_text",
+      "persistentUuid": "a4b54ee1-4da2-43d5-9924-b71d3109faf2",
+      "width": 0,
+      "x": 154,
+      "y": 88,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "xp_atual_text",
+      "persistentUuid": "8e3b6f93-f45f-4f4a-a0ee-a5ef6f5a5558",
+      "width": 0,
+      "x": 154,
+      "y": 51,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -874,6 +938,32 @@
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "static_phantom_att.morto",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "static_phantom",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -922,7 +1012,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "batalha",
+                "echo_died",
                 "True",
                 ""
               ]
@@ -936,9 +1026,19 @@
               "parameters": [
                 "echo_the_hero",
                 "=",
-                "echo_posicao_x",
+                "1251",
                 "=",
-                "echo_posicao_y"
+                "331"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "echo_died",
+                "False",
+                ""
               ]
             }
           ]
@@ -1031,32 +1131,11 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_x",
-            "=",
-            "echo_the_hero.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_y",
-            "=",
-            "echo_the_hero.Y()"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
+            "value": "PushScene"
           },
           "parameters": [
             "",
-            "\"Battle\"",
-            ""
+            "\"Battle\""
           ]
         }
       ]
@@ -1097,26 +1176,6 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_x",
-            "=",
-            "echo_the_hero.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_y",
-            "=",
-            "echo_the_hero.Y()"
-          ]
-        },
-        {
-          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1126,6 +1185,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "upando_nivel"
     }
   ],
   "layers": [
@@ -1283,6 +1349,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

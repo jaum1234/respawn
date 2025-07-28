@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6897782140104589,
+    "zoomFactor": 1.4790395861757577,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1402,14 +1402,78 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 40.74074074074073,
+      "height": 26,
       "layer": "Layer",
       "name": "barra_ameaca",
-      "persistentUuid": "37d20d0a-3c54-44d4-83da-a8f18ab5fd50",
-      "width": 200,
+      "persistentUuid": "3884117c-8216-4230-94b6-25a1d12b894c",
+      "width": 100,
       "x": 42,
-      "y": 20,
-      "zOrder": 10,
+      "y": 33,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 26,
+      "layer": "Layer",
+      "name": "BlueDotBar",
+      "persistentUuid": "74982f9a-d5c7-4910-8466-6c7fd0e4759d",
+      "width": 100,
+      "x": 42,
+      "y": 66,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "nivel_atual_label",
+      "persistentUuid": "5cbd800c-ed00-46bf-b307-df11f2552db6",
+      "width": 0,
+      "x": 43,
+      "y": 98,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "nivel_atual_text",
+      "persistentUuid": "21a19074-7a29-4cd7-a6e2-8fc3dbaf9a0e",
+      "width": 0,
+      "x": 149,
+      "y": 99,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "xp_atual_text",
+      "persistentUuid": "5d488e30-842e-4f12-8dd3-7229f4a1e9db",
+      "width": 0,
+      "x": 150,
+      "y": 67,
+      "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1672,6 +1736,32 @@
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "cyrog_att.morto",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "boss2",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -1728,7 +1818,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "batalha",
+                "echo_died",
                 "True",
                 ""
               ]
@@ -1742,9 +1832,19 @@
               "parameters": [
                 "echo_the_hero",
                 "=",
-                "echo_posicao_x",
+                "593",
                 "=",
-                "echo_posicao_y"
+                "650"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "echo_died",
+                "False",
+                ""
               ]
             }
           ]
@@ -1905,32 +2005,11 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_x",
-            "=",
-            "echo_the_hero.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_y",
-            "=",
-            "echo_the_hero.Y()"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
+            "value": "PushScene"
           },
           "parameters": [
             "",
-            "\"Battle\"",
-            ""
+            "\"Battle\""
           ]
         }
       ]
@@ -1964,26 +2043,6 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_x",
-            "=",
-            "echo_the_hero.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "echo_posicao_y",
-            "=",
-            "echo_the_hero.Y()"
-          ]
-        },
-        {
-          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1993,6 +2052,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "upando_nivel"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -2157,6 +2223,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

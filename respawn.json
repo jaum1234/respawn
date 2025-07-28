@@ -1536,6 +1536,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/poof OJ 1.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -2285,6 +2293,30 @@
         "metadata": "",
         "name": "assets/Kenney Future Narrow.ttf",
         "userAdded": false
+      },
+      {
+        "file": "assets/Dot Bar Blue Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/aa81b97c3211cf1e7cd040b96f5409851e3f1141c496b064157588294f09e662_Dot Bar Blue Border.png",
+          "name": "Dot Bar Blue Border.png"
+        }
+      },
+      {
+        "file": "assets/Dot Bar Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/0f15d828199d38d229469b48c953574c22a34b8daeb8941f3eb40df01a8f7d22_Dot Bar Blue Fill Bar.png",
+          "name": "Dot Bar Blue Fill Bar.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -2699,6 +2731,152 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
+      "name": "BlueDotBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Blue Dot Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "InitialValue": 0,
+        "MaxValue": 400
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "nivel_atual_label",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Nível atual: ",
+      "font": "assets/Roboto-Bold4.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Nível atual: ",
+        "font": "assets/Roboto-Bold4.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "nivel_atual_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "1",
+      "font": "assets/Roboto-Bold4.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "1",
+        "font": "assets/Roboto-Bold4.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "xp_atual_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2712,6 +2890,18 @@
       },
       {
         "objectName": "Transition"
+      },
+      {
+        "objectName": "BlueDotBar"
+      },
+      {
+        "objectName": "nivel_atual_label"
+      },
+      {
+        "objectName": "nivel_atual_text"
+      },
+      {
+        "objectName": "xp_atual_text"
       },
       {
         "objectName": "colisao"
@@ -2768,9 +2958,21 @@
       "value": false
     },
     {
+      "folded": true,
       "name": "nivel_atual",
-      "type": "number",
-      "value": 1
+      "type": "structure",
+      "children": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "xp",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "name": "xp_atual",
@@ -2847,6 +3049,11 @@
           "value": 120
         },
         {
+          "name": "morto",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "name": "xp",
           "type": "number",
           "value": 240
@@ -2899,6 +3106,11 @@
           "name": "hp",
           "type": "number",
           "value": 180
+        },
+        {
+          "name": "morto",
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "xp",
@@ -2955,6 +3167,11 @@
           "value": 220
         },
         {
+          "name": "morto",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "name": "xp",
           "type": "number",
           "value": 420
@@ -2962,7 +3179,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "arquiteto_att",
       "type": "structure",
       "children": [
@@ -2980,6 +3196,11 @@
           "name": "hp",
           "type": "number",
           "value": 300
+        },
+        {
+          "name": "morto",
+          "type": "boolean",
+          "value": false
         }
       ]
     },
@@ -3050,6 +3271,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "nivel_5",
       "type": "structure",
       "children": [
@@ -3069,6 +3291,21 @@
           "value": 2500
         }
       ]
+    },
+    {
+      "name": "echo_died",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "enemy_dead",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dead_echo",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [

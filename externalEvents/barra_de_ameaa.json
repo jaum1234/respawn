@@ -4,7 +4,19 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::Width"
+          },
+          "parameters": [
+            "barra_ameaca",
+            "Resizable",
+            "<=",
+            "100"
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -29,6 +41,16 @@
           "parameters": [
             "echo_the_hero",
             "TopDownMovement"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "nivel_de_ameaca",
+            "<=",
+            "100"
           ]
         }
       ],
