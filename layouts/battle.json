@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7619362677197614,
+    "zoomFactor": 0.27253598967729353,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -308,8 +308,8 @@
       "name": "echo_the_hero",
       "persistentUuid": "56376aa5-3bd1-4303-9459-a72d4f0b95c0",
       "width": 0,
-      "x": 599,
-      "y": -175,
+      "x": -139,
+      "y": -515,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -4095,7 +4095,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "começo cena",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4233,6 +4232,14 @@
                 "turn",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "echo_the_hero"
               ]
             },
             {
@@ -5803,6 +5810,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "acoes inimigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7681,6 +7689,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "morte",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
